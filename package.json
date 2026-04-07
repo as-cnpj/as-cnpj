@@ -4,9 +4,9 @@
   "type": "module",
   "description": "Hub tecnico para CNPJ numerico e alfanumerico.",
   "engines": {
-    "node": ">=22"
+    "node": ">=20"
   },
   "scripts": {
-    "test": "node --test --experimental-test-isolation=none packages/js-reference/test/cnpj.test.js"
+    "test": "node packages/js-reference/test/run.js"
   }
 }

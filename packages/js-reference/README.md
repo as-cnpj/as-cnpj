@@ -45,7 +45,7 @@ Aliases explícitos:
 ## Testes
 
 ```bash
-node --test --experimental-test-isolation=none packages/js-reference/test/cnpj.test.js
+node packages/js-reference/test/run.js
 ```
 
 ## Referência pública

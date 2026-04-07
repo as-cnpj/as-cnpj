@@ -30,7 +30,7 @@ jobs:
           node --check packages/js-reference/src/index.js
 
       - name: Run tests
-        run: node --test --experimental-test-isolation=none packages/js-reference/test/cnpj.test.js
+        run: node packages/js-reference/test/run.js
 
       - name: Verify package contents
         run: |
