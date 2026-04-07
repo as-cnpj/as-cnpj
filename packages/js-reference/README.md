@@ -8,6 +8,13 @@ O repositorio dedicado da biblioteca agora e:
 
 - `https://github.com/as-cnpj/as-cnpj-js`
 
+## Referencias rapidas
+
+- [API local](docs/api.md)
+- [Estrategia de testes](test/README.md)
+- [Checklist de release](docs/release-checklist.md)
+- [Politica de seguranca](SECURITY.md)
+
 ## Papel desta pasta dentro do hub
 
 Ela existe para:
