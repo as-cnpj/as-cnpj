@@ -1,23 +1,23 @@
 # Playbook da Org GitHub
 
-Idiomas: **Portugues (Brasil)** | [English](playbook-da-org-github.en.md) | [Espanol](playbook-da-org-github.es.md) | [Francais](playbook-da-org-github.fr.md)
+Idiomas: **Português (Brasil)** | [English](playbook-da-org-github.en.md) | [Español](playbook-da-org-github.es.md) | [Français](playbook-da-org-github.fr.md)
 
 ## Objetivo
 
-Padronizar a apresentacao, naming e governanca da org `as-cnpj` e dos repositorios da familia.
+Padronizar a apresentação, naming e governança da org `as-cnpj` e dos repositórios da família.
 
-## Modelo da org
+## Modelo da Org
 
-- **Uma org unica**: `as-cnpj`
-- **Um repo central para governanca**: `as-cnpj`
+- **Uma org única**: `as-cnpj`
+- **Um repo central para governança**: `as-cnpj`
 - **Um repo por biblioteca**: `as-cnpj-js`, `as-cnpj-python`, `as-cnpj-java`, `as-cnpj-dotnet`, `as-cnpj-go`
 
-O hub centraliza documentacao, vetores de teste e benchmarks.
-Cada repo por linguagem centraliza apenas codigo daquela linguagem.
+O hub centraliza documentação, vetores de teste e benchmarks.
+Cada repo por linguagem centraliza apenas código daquela linguagem.
 
 ## Naming
 
-- hub: `as-cnpj` (marca curta do ecossistema, baseada na origem ASCII)
+- hub: `as-cnpj`
 - repos derivados: `as-cnpj-{linguagem}`
 - pacotes sugeridos:
   - npm: `@as-cnpj/core`
@@ -25,11 +25,11 @@ Cada repo por linguagem centraliza apenas codigo daquela linguagem.
   - Maven: `br.com.ascnpj:as-cnpj`
   - NuGet: `AsCnpj`
 
-## Descricao curta sugerida para a org
+## Descrição Curta Sugerida para a Org
 
-Bibliotecas autorais para validacao de CNPJ numerico e alfanumerico, com especificacao compartilhada e foco em consistencia entre linguagens.
+Bibliotecas autorais para validação de CNPJ numérico e alfanumérico, com especificação compartilhada e foco em consistência entre linguagens.
 
-## Repositorios para pin
+## Repositórios para Pin
 
 Quando existirem:
 
@@ -40,18 +40,18 @@ Quando existirem:
 5. `as-cnpj-dotnet`
 6. `as-cnpj-go`
 
-## Descricao curta sugerida por repo
+## Descrição Curta Sugerida por Repo
 
-| Repo | Descricao |
+| Repo | Descrição |
 | --- | --- |
-| `as-cnpj` | Hub central do ecossistema AS-CNPJ: manifesto, especificacao, vetores de teste e governanca. |
+| `as-cnpj` | Hub central do ecossistema AS-CNPJ: manifesto, especificação, vetores de teste e governança. |
 | `as-cnpj-js` | Biblioteca autoral AS-CNPJ para JavaScript e TypeScript. |
 | `as-cnpj-python` | Biblioteca autoral AS-CNPJ para Python. |
 | `as-cnpj-java` | Biblioteca autoral AS-CNPJ para Java. |
 | `as-cnpj-dotnet` | Biblioteca autoral AS-CNPJ para C# e .NET. |
 | `as-cnpj-go` | Biblioteca autoral AS-CNPJ para Go. |
 
-## Topics sugeridos
+## Topics Sugeridos
 
 Topics comuns:
 
@@ -70,39 +70,39 @@ Topics por repo:
 - `dotnet`
 - `golang`
 
-## Ordem de criacao recomendada
+## Ordem de Criação Recomendada
 
 1. configurar bem `as-cnpj`;
 2. amadurecer `as-cnpj-js`;
 3. publicar o primeiro pacote do ecossistema;
 4. repetir o processo nas demais linguagens.
 
-Nao abrir varios repos vazios ao mesmo tempo.
-Abrir um repo, estabilizar, documentar, publicar, e so depois seguir para o proximo.
+Não abrir vários repos vazios ao mesmo tempo.
+Abrir um repo, estabilizar, documentar, publicar, e só depois seguir para o próximo.
 
-## Politica visual
+## Política Visual
 
 Cada repo deve transmitir imediatamente:
 
 - que pertence ao ecossistema AS-CNPJ;
 - qual linguagem atende;
-- se ja esta pronto para uso ou ainda esta em fase inicial.
+- se já está pronto para uso ou ainda está em fase inicial.
 
-## Estrutura do topo do README
+## Estrutura do Topo do README
 
 Todo repo derivado deve abrir com:
 
 1. nome do repo;
 2. uma frase curta de posicionamento;
 3. status do projeto;
-4. instalacao;
-5. exemplo minimo;
+4. instalação;
+5. exemplo mínimo;
 6. link para o hub `as-cnpj`.
 
-## Regra de governanca
+## Regra de Governança
 
-- o hub centraliza documentacao, vetores de teste e benchmarks;
-- cada repo por linguagem centraliza apenas codigo daquela linguagem;
+- o hub centraliza documentação, vetores de teste e benchmarks;
+- cada repo por linguagem centraliza apenas código daquela linguagem;
 - os vetores de teste devem ser compartilhados e versionados de forma independente;
-- toda implementacao deve provar compatibilidade com os vetores do hub;
+- toda implementação deve provar compatibilidade com os vetores do hub;
 - novos repos devem nascer apenas depois de seguir o template do hub.

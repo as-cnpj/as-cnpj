@@ -1,28 +1,28 @@
-# Roadmap dos Repositorios
+# Roadmap dos Repositórios
 
 Idiomas: **Português (Brasil)** | [English](roadmap-dos-repositorios.en.md) | [Español](roadmap-dos-repositorios.es.md) | [Français](roadmap-dos-repositorios.fr.md)
 
 ## Objetivo
 
-Definir a ordem de maturacao e o escopo de cada repositorio da org `as-cnpj`.
+Definir a ordem de maturação e o escopo de cada repositório da org `as-cnpj`.
 
-## Fase atual
+## Fase Atual
 
-A org ja existe:
+A org já existe:
 
 - https://github.com/as-cnpj
 
-O primeiro repositorio derivado tambem ja existe:
+O primeiro repositório derivado também já existe:
 
 - https://github.com/as-cnpj/as-cnpj-js
 
-Agora o foco e:
+Agora o foco é:
 
 - consolidar o hub como fonte de verdade do ecossistema;
-- amadurecer `as-cnpj-js` ate publicacao de pacote;
-- replicar o contrato tecnico nas proximas linguagens.
+- amadurecer `as-cnpj-js` até publicação de pacote;
+- replicar o contrato técnico nas próximas linguagens.
 
-## Sequencia recomendada
+## Sequência Recomendada
 
 ### 1. `as-cnpj`
 
@@ -30,42 +30,42 @@ Escopo:
 
 - manifesto;
 - fontes oficiais;
-- especificacao;
+- especificação;
 - vetores de teste;
-- governanca;
+- governança;
 - roadmap;
 - templates.
 
 Resultado esperado:
 
-- virar a pagina principal da org;
-- explicar o problema, a visao e a arquitetura do ecossistema.
+- virar a página principal da org;
+- explicar o problema, a visão e a arquitetura do ecossistema.
 
 ### 2. `as-cnpj-js`
 
 Estado atual:
 
-- repositorio publicado em `https://github.com/as-cnpj/as-cnpj-js`
+- repositório publicado em `https://github.com/as-cnpj/as-cnpj-js`
 
 Escopo desta fase:
 
-- estabilizar a API publica inicial;
+- estabilizar a API pública inicial;
 - manter testes automatizados;
-- endurecer CI, governanca e release process;
+- endurecer CI, governança e release process;
 - preparar empacotamento para npm.
 
 Resultado esperado:
 
-- fixar o primeiro contrato idiomatico do ecossistema;
-- servir como base de comparacao para os demais ports;
-- chegar a uma primeira release de pacote com validacao forte.
+- fixar o primeiro contrato idiomático do ecossistema;
+- servir como base de comparação para os demais ports;
+- chegar a uma primeira release de pacote com validação forte.
 
 ### 3. `as-cnpj-python`
 
 Escopo:
 
 - port fiel do contrato funcional;
-- API idiomatica em Python;
+- API idiomática em Python;
 - testes espelhando os vetores do hub.
 
 ### 4. `as-cnpj-java`
@@ -73,15 +73,15 @@ Escopo:
 Escopo:
 
 - foco corporativo;
-- API clara para integracao backend;
-- cobertura forte do algoritmo e de formatacao.
+- API clara para integração backend;
+- cobertura forte do algoritmo e de formatação.
 
 ### 5. `as-cnpj-dotnet`
 
 Escopo:
 
 - foco em .NET moderno;
-- API com boa semantica para servicos e apps corporativos.
+- API com boa semântica para serviços e apps corporativos.
 
 ### 6. `as-cnpj-go`
 
@@ -89,29 +89,29 @@ Escopo:
 
 - foco em simplicidade, baixo overhead e ergonomia de pacote.
 
-## Criterio para abrir um novo repo
+## Critério para Abrir um Novo Repo
 
 Abrir um novo repo somente quando houver:
 
-- especificacao suficiente no hub;
+- especificação suficiente no hub;
 - template de repo aplicado;
 - vetores de teste prontos;
 - escopo da linguagem definido;
-- disponibilidade para manter o repo depois da criacao.
+- disponibilidade para manter o repo depois da criação.
 
-## Criterio para publicar pacote
+## Critério para Publicar Pacote
 
 Publicar pacote somente quando houver:
 
 - README forte;
 - testes automatizados verdes;
 - changelog inicial;
-- licenca definida;
-- API minima estabilizada;
+- licença definida;
+- API mínima estabilizada;
 - exemplos de uso.
 
-## Regra operacional
+## Regra Operacional
 
-Nao abrir varios repos vazios ao mesmo tempo.
+Não abrir vários repos vazios ao mesmo tempo.
 
-Abrir um repo, estabilizar, documentar, publicar, e so depois seguir para o proximo.
+Abrir um repo, estabilizar, documentar, publicar, e só depois seguir para o próximo.

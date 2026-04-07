@@ -1,28 +1,28 @@
-# Politica de Seguranca
+# Política de Segurança
 
 Idiomas: **Português (Brasil)** | [English](SECURITY.en.md) | [Español](SECURITY.es.md) | [Français](SECURITY.fr.md)
 
 ## Escopo
 
-Esta politica cobre:
+Esta política cobre:
 
-- o nucleo de validacao de todas as bibliotecas do ecossistema AS-CNPJ;
+- o núcleo de validação de todas as bibliotecas do ecossistema AS-CNPJ;
 - os vetores de teste compartilhados;
-- scripts de build e extracao do hub.
+- scripts de build e extração do hub.
 
-## Como reportar uma vulnerabilidade
+## Como Reportar uma Vulnerabilidade
 
-**Nao abra issue publica.**
+**Não abra issue pública.**
 
 Canal preferencial:
 
-- **GitHub Security Advisories** no repositorio afetado.
+- **GitHub Security Advisories** no repositório afetado.
 
 Passos:
 
-1. acesse a aba **Security** do repositorio;
+1. acesse a aba **Security** do repositório;
 2. clique em **Report a vulnerability**;
-3. descreva o problema com o maximo de detalhe possivel.
+3. descreva o problema com o máximo de detalhe possível.
 
 Canal alternativo:
 
@@ -30,28 +30,28 @@ Canal alternativo:
 
 ## O que incluir no report
 
-- descricao clara do problema;
+- descrição clara do problema;
 - passos para reproduzir;
-- versao afetada (ou commit hash);
+- versão afetada (ou commit hash);
 - impacto estimado;
-- sugestao de correcao, se houver.
+- sugestão de correção, se houver.
 
 ## Compromisso de resposta
 
-- **Confirmacao de recebimento**: ate 3 dias uteis.
-- **Avaliacao inicial**: ate 7 dias uteis.
-- **Correcao ou mitigacao publicada**: ate 30 dias apos confirmacao, quando aplicavel.
+- **Confirmação de recebimento**: até 3 dias úteis.
+- **Avaliação inicial**: até 7 dias úteis.
+- **Correção ou mitigação publicada**: até 30 dias após confirmação, quando aplicável.
 
-## Divulgacao
+## Divulgação
 
-Seguimos o modelo de **divulgacao coordenada**:
+Seguimos o modelo de **divulgação coordenada**:
 
-- o report permanece privado ate a correcao ser publicada;
-- o reporter sera creditado no changelog, salvo pedido de anonimato;
-- apos a correcao, publicaremos um advisory com detalhes tecnicos.
+- o report permanece privado até a correção ser publicada;
+- o reporter será creditado no changelog, salvo pedido de anonimato;
+- após a correção, publicaremos um advisory com detalhes técnicos.
 
 ## Fora de escopo
 
-- bugs funcionais que nao comprometam seguranca (use issues normais);
-- sugestoes de feature;
+- bugs funcionais que não comprometam segurança (use issues normais);
+- sugestões de feature;
 - problemas em dependencias externas ao ecossistema.

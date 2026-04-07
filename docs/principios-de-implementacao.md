@@ -1,11 +1,11 @@
-# Principios de Implementacao
+# Princípios de Implementação
 
-Idiomas: **Portugues (Brasil)** | [English](principios-de-implementacao.en.md) | [Espanol](principios-de-implementacao.es.md) | [Francais](principios-de-implementacao.fr.md)
+Idiomas: **Português (Brasil)** | [English](principios-de-implementacao.en.md) | [Español](principios-de-implementacao.es.md) | [Français](principios-de-implementacao.fr.md)
 
-Este conteudo foi consolidado no [Manifesto AS-CNPJ](manifesto-as-cnpj.md).
+Este conteúdo foi consolidado no [Manifesto AS-CNPJ](manifesto-as-cnpj.md).
 
-Consulte as secoes:
+Consulte as seções:
 
-- **Contrato minimo de API**
-- **Contrato minimo de qualidade**
-- **Estrategia de evolucao**
+- **Contrato mínimo de API**
+- **Contrato mínimo de qualidade**
+- **Estratégia de evolução**

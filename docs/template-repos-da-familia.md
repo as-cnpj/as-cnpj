@@ -1,10 +1,10 @@
-# Template de Repos da Familia
+# Template de Repos da Família
 
 Idiomas: **Português (Brasil)** | [English](template-repos-da-familia.en.md) | [Español](template-repos-da-familia.es.md) | [Français](template-repos-da-familia.fr.md)
 
-Este documento define o padrao minimo para qualquer repositorio do ecossistema **AS-CNPJ**.
+Este documento define o padrão mínimo para qualquer repositório do ecossistema **AS-CNPJ**.
 
-## Estrutura minima
+## Estrutura Mínima
 
 Todo repo do ecossistema deve conter:
 
@@ -22,21 +22,21 @@ repo/
   test/
 ```
 
-Se a linguagem exigir arquivos adicionais de build, pacote ou workspace, eles entram sem alterar esse minimo.
+Se a linguagem exigir arquivos adicionais de build, pacote ou workspace, eles entram sem alterar esse mínimo.
 
-## README minimo
+## README Mínimo
 
 Todo README de repo derivado deve responder rapidamente:
 
 - o que a biblioteca faz;
 - quais formatos aceita;
-- se suporta CNPJ numerico e alfanumerico;
+- se suporta CNPJ numérico e alfanumérico;
 - como instalar;
-- exemplos minimos;
+- exemplos mínimos;
 - como rodar testes;
 - status de estabilidade.
 
-## API minima esperada
+## API Mínima Esperada
 
 Sempre que a linguagem permitir, manter este contrato conceitual:
 
@@ -46,37 +46,37 @@ Sempre que a linguagem permitir, manter este contrato conceitual:
 - `assertValid`
 - `calculateCheckDigits`
 
-Pode haver adaptacao idiomatica por linguagem, mas a semantica deve continuar equivalente.
+Pode haver adaptação idiomática por linguagem, mas a semântica deve continuar equivalente.
 
-## Comportamento minimo obrigatorio
+## Comportamento Mínimo Obrigatório
 
 Toda biblioteca do ecossistema deve:
 
-- aceitar entrada mascarada e nao mascarada;
+- aceitar entrada mascarada e não mascarada;
 - normalizar para caixa alta;
-- validar os 14 caracteres finais apos saneamento;
-- exigir DV numerico;
-- suportar CNPJ numerico legado;
-- suportar CNPJ alfanumerico;
+- validar os 14 caracteres finais após saneamento;
+- exigir DV numérico;
+- suportar CNPJ numérico legado;
+- suportar CNPJ alfanumérico;
 - ter modo estrito quando fizer sentido na linguagem;
 - rejeitar caracteres fora da regra oficial.
 
-## Testes minimos obrigatorios
+## Testes Mínimos Obrigatórios
 
 Toda biblioteca do ecossistema deve testar:
 
 - exemplo oficial da Receita `12.ABC.345/01DE-35`;
-- ao menos um CNPJ numerico valido;
-- ao menos um CNPJ alfanumerico valido;
-- DV invalido;
+- ao menos um CNPJ numérico válido;
+- ao menos um CNPJ alfanumérico válido;
+- DV inválido;
 - entrada vazia;
-- entrada com tipo invalido, quando aplicavel;
-- entrada com mascara;
-- entrada sem mascara;
-- normalizacao de caixa baixa para alta;
-- repeticoes triviais invalidas.
+- entrada com tipo inválido, quando aplicável;
+- entrada com máscara;
+- entrada sem máscara;
+- normalização de caixa baixa para alta;
+- repetições triviais inválidas.
 
-## Arquivos recomendados
+## Arquivos Recomendados
 
 Quando o repo amadurecer:
 
@@ -84,37 +84,37 @@ Quando o repo amadurecer:
 - `examples/`
 - `benchmarks/`
 
-## Politica de versao
+## Política de Versão
 
-Recomendacao:
+Recomendação:
 
 - `0.x` enquanto a API do ecossistema ainda estiver estabilizando;
-- `1.0.0` apenas quando a semantica principal estiver congelada e testada em producao.
+- `1.0.0` apenas quando a semântica principal estiver congelada e testada em produção.
 
-## Politica de release
+## Política de Release
 
 Cada release deve declarar claramente:
 
-- alteracoes funcionais;
-- correcao de bug;
+- alterações funcionais;
+- correção de bug;
 - impacto em compatibilidade;
 - novos vetores de teste;
-- mudancas de documentacao.
+- mudanças de documentação.
 
-## Relacao com o hub
+## Relação com o Hub
 
 Cada repo derivado deve apontar para o hub `as-cnpj` como origem de:
 
 - manifesto;
-- especificacao;
+- especificação;
 - vetores de teste compartilhados;
-- diretrizes de governanca.
+- diretrizes de governança.
 
-## Checklist de criacao de novo repo
+## Checklist de Criação de Novo Repo
 
-1. Criar o repo com naming padrao da familia.
-2. Publicar README minimo.
-3. Implementar o nucleo do algoritmo sem dependencias desnecessarias.
+1. Criar o repo com naming padrão da família.
+2. Publicar README mínimo.
+3. Implementar o núcleo do algoritmo sem dependências desnecessárias.
 4. Portar os vetores de teste oficiais do ecossistema.
-5. Garantir consistencia de API com o hub.
-6. Publicar primeira versao somente depois de testes automatizados verdes.
+5. Garantir consistência de API com o hub.
+6. Publicar primeira versão somente depois de testes automatizados verdes.

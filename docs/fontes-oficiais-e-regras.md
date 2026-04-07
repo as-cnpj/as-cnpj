@@ -2,99 +2,99 @@
 
 Idiomas: **Português (Brasil)** | [English](fontes-oficiais-e-regras.en.md) | [Español](fontes-oficiais-e-regras.es.md) | [Français](fontes-oficiais-e-regras.fr.md)
 
-## Fontes oficiais principais
+## Fontes Oficiais Principais
 
-- Receita Federal: anuncio oficial sobre a mudanca para o formato alfanumerico  
+- Receita Federal: anúncio oficial sobre a mudança para o formato alfanumérico  
   https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/outubro/cnpj-tera-letras-e-numeros-a-partir-de-julho-de-2026
-- Receita Federal: pagina tecnica do calculo do DV do CNPJ alfanumerico  
+- Receita Federal: página técnica do cálculo do DV do CNPJ alfanumérico  
   https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos/cnpj
 - Receita Federal: FAQ oficial em PDF  
   https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/cnpj/cnpj-alfanumerico.pdf
-- Gov.br / Receita Federal: simulador oficial de inscricao alfanumerica  
+- Gov.br / Receita Federal: simulador oficial de inscrição alfanumérica  
   https://www.gov.br/pt-br/servicos/simulador-cnpj-alfanumerico
 
-## O que esta confirmado
+## O Que Está Confirmado
 
-- O marco oficial consultado e **julho de 2026**.
-- O tamanho do CNPJ continua em **14 posicoes**.
-- As **12 primeiras posicoes** passam a aceitar letras maiusculas de `A` a `Z` e numeros de `0` a `9`.
-- Os **2 ultimos caracteres** continuam sendo digitos verificadores numericos.
-- O calculo do DV continua em **modulo 11**.
-- A conversao para calculo usa **codigo ASCII menos 48**.
-- CNPJs antigos nao mudam.
-- Havera convivencia entre CNPJs numericos e alfanumericos.
-- Filiais tambem podem ter letras no numero de ordem.
-- A Receita informa que a atribuicao sera aleatoria, entao **mesmo apos julho de 2026 ainda pode surgir um novo CNPJ totalmente numerico**.
+- O marco oficial consultado é **julho de 2026**.
+- O tamanho do CNPJ continua em **14 posições**.
+- As **12 primeiras posições** passam a aceitar letras maiúsculas de `A` a `Z` e números de `0` a `9`.
+- Os **2 últimos caracteres** continuam sendo dígitos verificadores numéricos.
+- O cálculo do DV continua em **módulo 11**.
+- A conversão para cálculo usa **código ASCII menos 48**.
+- CNPJs antigos não mudam.
+- Haverá convivência entre CNPJs numéricos e alfanuméricos.
+- Filiais também podem ter letras no número de ordem.
+- A Receita informa que a atribuição será aleatória, então **mesmo após julho de 2026 ainda pode surgir um novo CNPJ totalmente numérico**.
 
-## Ponto de rigor sobre datas
+## Ponto de Rigor Sobre Datas
 
-O video transcrito cita **1 de julho de 2026**, mas nas fontes oficiais consultadas a formulacao recorrente e **"julho de 2026"** ou **"a partir de julho de 2026"**.
+O vídeo transcrito cita **1 de julho de 2026**, mas nas fontes oficiais consultadas a formulação recorrente é **"julho de 2026"** ou **"a partir de julho de 2026"**.
 
-Conclusao pratica:
+Conclusão prática:
 
 - trate **julho de 2026** como marco oficial confirmado;
-- nao assuma o dia 1 como verdade absoluta sem ato normativo mais especifico na sua trilha de compliance.
+- não assuma o dia 1 como verdade absoluta sem ato normativo mais específico na sua trilha de compliance.
 
-## Regra de validacao
+## Regra de Validação
 
 Entrada normalizada:
 
-- converter para maiusculas;
-- remover caracteres que nao sejam `A-Z0-9`;
+- converter para maiúsculas;
+- remover caracteres que não sejam `A-Z0-9`;
 - exigir 14 caracteres no total;
 - exigir regex final `^[A-Z0-9]{12}[0-9]{2}$`.
 
-Conversao para calculo:
+Conversão para cálculo:
 
 - `0` a `9` continuam equivalendo a `0` a `9`;
 - `A` vira `17`, `B` vira `18`, ..., `Z` vira `42`;
-- formula: `valor = codigoASCII(caractere) - 48`.
+- fórmula: `valor = codigoASCII(caractere) - 48`.
 
 Pesos:
 
 - primeiro DV: `5 4 3 2 9 8 7 6 5 4 3 2`
 - segundo DV: `6 5 4 3 2 9 8 7 6 5 4 3 2`
 
-Regra do digito:
+Regra do dígito:
 
 - `resto < 2 => DV = 0`
-- caso contrario `DV = 11 - resto`
+- caso contrário `DV = 11 - resto`
 
-## Implicacoes de arquitetura
+## Implicações de Arquitetura
 
 ### Banco de dados
 
-- coluna de CNPJ deve ser `CHAR(14)` ou `VARCHAR(14)` sem mascara;
-- se salvar com mascara, reserve 18 caracteres;
-- nao use tipo numerico;
-- revise indices, constraints e contratos de integracao.
+- coluna de CNPJ deve ser `CHAR(14)` ou `VARCHAR(14)` sem máscara;
+- se salvar com máscara, reserve 18 caracteres;
+- não use tipo numérico;
+- revise índices, constraints e contratos de integração.
 
 ### Backend
 
-- normalize para maiusculas antes de persistir ou comparar;
-- aceite tanto numerico quanto alfanumerico na mesma regra;
-- nao escreva "if CNPJ novo / else CNPJ antigo" se a unica diferenca for a conversao do caractere.
+- normalize para maiúsculas antes de persistir ou comparar;
+- aceite tanto numérico quanto alfanumérico na mesma regra;
+- não escreva "if CNPJ novo / else CNPJ antigo" se a única diferença for a conversão do caractere.
 
 ### Frontend
 
-- ajuste mascara e regex;
-- nao rejeite letras nas 12 primeiras posicoes;
+- ajuste máscara e regex;
+- não rejeite letras nas 12 primeiras posições;
 - preserve UX para CNPJ legado.
 
-### Integracoes
+### Integrações
 
-- revise emissores fiscais, ERPs, gateways, ETLs e validacoes de terceiros;
+- revise emissores fiscais, ERPs, gateways, ETLs e validações de terceiros;
 - revise schemas OpenAPI, JSON Schema, GraphQL e contratos de fila;
-- revise pipelines que assumem somente digitos.
+- revise pipelines que assumem somente dígitos.
 
-## Checklist minimo de migracao
+## Checklist Mínimo de Migração
 
 - armazenar CNPJ como texto;
-- aceitar `A-Z0-9` nas 12 primeiras posicoes;
-- manter DV numerico;
-- validar com modulo 11 + `ASCII - 48`;
-- cobrir coexistencia entre formatos;
-- cobrir novos cadastros numericos apos julho de 2026;
-- incluir casos com caixa baixa na entrada e normalizacao para caixa alta;
-- validar comportamento com mascara e sem mascara;
-- testar toda integracao que serialize CNPJ.
+- aceitar `A-Z0-9` nas 12 primeiras posições;
+- manter DV numérico;
+- validar com módulo 11 + `ASCII - 48`;
+- cobrir coexistência entre formatos;
+- cobrir novos cadastros numéricos após julho de 2026;
+- incluir casos com caixa baixa na entrada e normalização para caixa alta;
+- validar comportamento com máscara e sem máscara;
+- testar toda integração que serialize CNPJ.

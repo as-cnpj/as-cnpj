@@ -1,11 +1,11 @@
-# Estrategia de Repo e Nome
+# Estratégia de Repo e Nome
 
-Idiomas: **Portugues (Brasil)** | [English](estrategia-repo-e-nome.en.md) | [Espanol](estrategia-repo-e-nome.es.md) | [Francais](estrategia-repo-e-nome.fr.md)
+Idiomas: **Português (Brasil)** | [English](estrategia-repo-e-nome.en.md) | [Español](estrategia-repo-e-nome.es.md) | [Français](estrategia-repo-e-nome.fr.md)
 
-Este conteudo foi consolidado no [Playbook da Org GitHub](playbook-da-org-github.md).
+Este conteúdo foi consolidado no [Playbook da Org GitHub](playbook-da-org-github.md).
 
-Consulte as secoes:
+Consulte as seções:
 
 - **Modelo da org**
 - **Naming**
-- **Regra de governanca**
+- **Regra de governança**

@@ -2,68 +2,68 @@
 
 Idiomas: **Português (Brasil)** | [English](manifesto-as-cnpj.en.md) | [Español](manifesto-as-cnpj.es.md) | [Français](manifesto-as-cnpj.fr.md)
 
-## O que e
+## O Que é
 
-**AS-CNPJ** e um ecossistema autoral de bibliotecas para validacao, normalizacao e formatacao de CNPJ numerico e alfanumerico.
+**AS-CNPJ** é um ecossistema autoral de bibliotecas para validação, normalização e formatação de CNPJ numérico e alfanumérico.
 
 O projeto nasce de uma premissa simples:
 
-- a mudanca do CNPJ em **julho de 2026** exige software serio;
-- software serio precisa de implementacao auditavel, testes fortes e documentacao clara;
-- isso merece uma familia de bibliotecas consistentes, e nao solucoes improvisadas por linguagem.
+- a mudança do CNPJ em **julho de 2026** exige software sério;
+- software sério precisa de implementação auditável, testes fortes e documentação clara;
+- isso merece uma família de bibliotecas consistentes, e não soluções improvisadas por linguagem.
 
-## O que defendemos
+## O Que Defendemos
 
-- **Implementacao propria** baseada em fonte oficial da Receita Federal.
-- **Coerencia entre linguagens** sem divergir comportamento sem motivo forte.
-- **Nucleo pequeno e auditavel** antes de features perifericas.
+- **Implementação própria** baseada em fonte oficial da Receita Federal.
+- **Coerência entre linguagens** sem divergir comportamento sem motivo forte.
+- **Núcleo pequeno e auditável** antes de features periféricas.
 - **Testes compartilhados** como contrato do ecossistema.
-- **Documentacao direta** para uso real em producao.
+- **Documentação direta** para uso real em produção.
 - **Compatibilidade com legado** sem sacrificar rigor.
 
-## O que rejeitamos
+## O Que Rejeitamos
 
-- copiar codigo de terceiros;
-- portar codigo linha a linha de outro projeto;
-- usar repositorios terceiros como base de publicacao;
-- heuristicas frageis baseadas em data;
-- regex solta sem validacao matematica;
+- copiar código de terceiros;
+- portar código linha a linha de outro projeto;
+- usar repositórios terceiros como base de publicação;
+- heurísticas frágeis baseadas em data;
+- regex solta sem validação matemática;
 - API inflada para parecer completa;
-- dependencias desnecessarias no nucleo;
-- divergencia silenciosa entre bibliotecas da mesma familia.
+- dependências desnecessárias no núcleo;
+- divergência silenciosa entre bibliotecas da mesma família.
 
-## O que e aceitavel usar como base
+## O Que é Aceitável Usar como Base
 
-- documentacao oficial da Receita Federal;
+- documentação oficial da Receita Federal;
 - FAQ oficial;
-- simulador oficial para validacao cruzada;
-- vetores de teste produzidos pelo proprio projeto;
-- benchmarks e comparacoes comportamentais, sem reaproveitar codigo.
+- simulador oficial para validação cruzada;
+- vetores de teste produzidos pelo próprio projeto;
+- benchmarks e comparações comportamentais, sem reaproveitar código.
 
-## Tese tecnica
+## Tese Técnica
 
-O problema nao e apenas "aceitar letra no CNPJ".
+O problema não é apenas "aceitar letra no CNPJ".
 
-O problema real e manter, em multiplos ecossistemas:
+O problema real é manter, em múltiplos ecossistemas:
 
 - a mesma regra oficial;
-- a mesma normalizacao;
+- a mesma normalização;
 - os mesmos vetores de teste;
 - a mesma previsibilidade de API;
-- a mesma seguranca contra regressao.
+- a mesma segurança contra regressão.
 
-## Tese de produto
+## Tese de Produto
 
-Cada biblioteca da familia AS-CNPJ deve ser:
+Cada biblioteca da família AS-CNPJ deve ser:
 
 - pequena o bastante para ser auditada;
 - clara o bastante para ser adotada;
-- estavel o bastante para ser usada em sistemas corporativos;
+- estável o bastante para ser usada em sistemas corporativos;
 - simples o bastante para ser portada com fidelidade.
 
-## Contrato minimo de API
+## Contrato Mínimo de API
 
-Onde a linguagem permitir, manter um vocabulario parecido:
+Onde a linguagem permitir, manter um vocabulário parecido:
 
 - `normalize`
 - `isValid`
@@ -71,37 +71,37 @@ Onde a linguagem permitir, manter um vocabulario parecido:
 - `assertValid`
 - `calculateCheckDigits`
 
-O nome exato pode variar, mas o comportamento nao deve divergir sem justificativa forte.
+O nome exato pode variar, mas o comportamento não deve divergir sem justificativa forte.
 
-## Contrato minimo de qualidade
+## Contrato Mínimo de Qualidade
 
-- sem dependencia obrigatoria para o algoritmo central, sempre que possivel;
-- zero IO no nucleo;
-- sem heuristicas por data;
+- sem dependência obrigatória para o algoritmo central, sempre que possível;
+- zero IO no núcleo;
+- sem heurísticas por data;
 - sem assumir que "novo cadastro" implica "CNPJ com letra";
-- sem aceitar caracteres fora de `A-Z0-9` nos 12 primeiros caracteres apos normalizacao;
-- DV sempre numerico;
-- toda regex do nucleo deve ser de tempo linear, sem grupo aninhado com quantificador;
-- rejeitar entrada com caracteres fora de ASCII printavel antes de processar;
+- sem aceitar caracteres fora de `A-Z0-9` nos 12 primeiros caracteres após normalização;
+- DV sempre numérico;
+- toda regex do núcleo deve ser de tempo linear, sem grupo aninhado com quantificador;
+- rejeitar entrada com caracteres fora de ASCII printável antes de processar;
 - testes com o exemplo oficial `12.ABC.345/01DE-35`.
 
-## Nossos compromissos
+## Nossos Compromissos
 
-1. Toda implementacao sera baseada prioritariamente na documentacao oficial da Receita Federal.
-2. Toda biblioteca do ecossistema devera validar CNPJ numerico e alfanumerico.
-3. Toda biblioteca do ecossistema devera ter testes automatizados.
-4. Toda biblioteca do ecossistema devera convergir para o mesmo comportamento funcional.
-5. O hub centralizara a especificacao, a governanca e os vetores de teste.
+1. Toda implementação será baseada prioritariamente na documentação oficial da Receita Federal.
+2. Toda biblioteca do ecossistema deverá validar CNPJ numérico e alfanumérico.
+3. Toda biblioteca do ecossistema deverá ter testes automatizados.
+4. Toda biblioteca do ecossistema deverá convergir para o mesmo comportamento funcional.
+5. O hub centralizará a especificação, a governança e os vetores de teste.
 
-## Escopo inicial
+## Escopo Inicial
 
 Fase 1:
 
 - hub central `as-cnpj`;
 - biblioteca `as-cnpj-js`;
-- especificacao compartilhada;
+- especificação compartilhada;
 - vetores de teste comuns;
-- padrao de API do ecossistema.
+- padrão de API do ecossistema.
 
 Fase 2:
 
@@ -110,14 +110,14 @@ Fase 2:
 - `as-cnpj-dotnet`
 - `as-cnpj-go`
 
-## Estrategia de evolucao
+## Estratégia de Evolução
 
-1. estabilizar a especificacao no hub;
+1. estabilizar a especificação no hub;
 2. publicar vetores de teste compartilhados;
 3. promover a biblioteca JS atual a repo dedicado;
 4. replicar o comportamento nas demais linguagens;
-5. comparar todas as bibliotecas da familia contra o mesmo suite de testes.
+5. comparar todas as bibliotecas da família contra o mesmo suite de testes.
 
-## Regra final
+## Regra Final
 
-Se uma escolha tornar o ecossistema mais dificil de auditar, testar, portar ou manter, a escolha esta errada.
+Se uma escolha tornar o ecossistema mais difícil de auditar, testar, portar ou manter, a escolha está errada.

@@ -2,59 +2,59 @@
 
 Idiomas: **Português (Brasil)** | [English](CONTRIBUTING.en.md) | [Español](CONTRIBUTING.es.md) | [Français](CONTRIBUTING.fr.md)
 
-## Modelo de manutencao
+## Modelo de Manutenção
 
-O ecossistema AS-CNPJ aceita contribuicoes, mas opera com **curadoria central do maintainer**.
+O ecossistema AS-CNPJ aceita contribuições, mas opera com **curadoria central do maintainer**.
 
 Isso significa:
 
-- PRs externos sao bem-vindos;
-- a decisao final de merge fica com os maintainers da org;
-- nem toda sugestao sera incorporada, mesmo quando tecnicamente correta, se divergir da linha de produto ou da estrategia do ecossistema.
+- PRs externos são bem-vindos;
+- a decisão final de merge fica com os maintainers da org;
+- nem toda sugestão será incorporada, mesmo quando tecnicamente correta, se divergir da linha de produto ou da estratégia do ecossistema.
 
-## Tipos de contribuicao aceitos
+## Tipos de Contribuição Aceitos
 
-- correcao de bug;
-- melhoria de documentacao;
+- correção de bug;
+- melhoria de documentação;
 - novos vetores de teste;
 - melhoria de testes existentes;
-- hardening de seguranca;
-- ajustes de ergonomia sem quebrar o contrato publico;
-- melhorias de build, CI e governanca.
+- hardening de segurança;
+- ajustes de ergonomia sem quebrar o contrato público;
+- melhorias de build, CI e governança.
 
-## Tipos de contribuicao que exigem alinhamento previo
+## Tipos de Contribuição que Exigem Alinhamento Prévio
 
 Abra issue ou discussion antes de enviar PR para:
 
-- mudanca de API publica;
-- mudanca de naming;
-- mudanca do algoritmo;
-- mudanca de licenca;
-- novo repositorio da familia;
-- mudanca estrutural na governanca.
+- mudança de API pública;
+- mudança de naming;
+- mudança do algoritmo;
+- mudança de licença;
+- novo repositório da família;
+- mudança estrutural na governança.
 
 ## Regras para PR
 
-- mantenha a mudanca focada;
-- inclua testes quando houver alteracao funcional;
-- atualize documentacao quando mudar contrato publico;
-- nao copie codigo de terceiros;
-- preserve consistencia com manifesto, vetores e contratos do hub.
+- mantenha a mudança focada;
+- inclua testes quando houver alteração funcional;
+- atualize documentação quando mudar contrato público;
+- não copie código de terceiros;
+- preserve consistência com manifesto, vetores e contratos do hub.
 
 ## Review
 
 - todo PR precisa de review de pelo menos um maintainer listado em `CODEOWNERS`;
-- PRs que alteram vetores, governanca, seguranca ou API publica podem exigir revisao adicional;
-- o maintainer pode pedir refactor, divisao do PR ou rejeitar a mudanca por razoes de coerencia do ecossistema.
+- PRs que alteram vetores, governança, segurança ou API pública podem exigir revisão adicional;
+- o maintainer pode pedir refactor, divisão do PR ou rejeitar a mudança por razões de coerência do ecossistema.
 
-## Licenca e autoria
+## Licença e Autoria
 
-Ao enviar contribuicoes, voce concorda que seu codigo e documentacao sejam distribuidos sob a licenca do repositorio.
+Ao enviar contribuições, você concorda que seu código e documentação sejam distribuídos sob a licença do repositório.
 
-No momento, o ecossistema **nao usa CLA separado**. O aceite se da via contribuicao voluntaria sob a licenca do projeto.
+No momento, o ecossistema **não usa CLA separado**. O aceite se dá via contribuição voluntária sob a licença do projeto.
 
-## Reportes de seguranca
+## Reportes de Segurança
 
-Nao use issue publica para vulnerabilidades.
+Não use issue pública para vulnerabilidades.
 
 Siga [SECURITY.md](SECURITY.md).
