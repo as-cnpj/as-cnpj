@@ -1,12 +1,20 @@
 # AS-CNPJ JS Reference
 
-Languages: [Portugues (Brasil)](README.md) | **English** | [Espanol](README.es.md) | [Francais](README.fr.md)
+Languages: [Português (Brasil)](README.md) | **English** | [Español](README.es.md) | [Français](README.fr.md)
 
 This folder is the working copy of the AS-CNPJ JavaScript/TypeScript library inside the hub.
 
 The dedicated public repository is:
 
 - `https://github.com/as-cnpj/as-cnpj-js`
+
+## Start here
+
+- [Local API](docs/api.md)
+- [Test strategy](test/README.md)
+- [Release checklist](docs/release-checklist.md)
+- [Security policy](SECURITY.md)
+- [Public as-cnpj-js README](../../exports/as-cnpj-js/README.md)
 
 ## Role of this folder inside the hub
 
@@ -16,7 +24,9 @@ It exists to:
 - make comparison with the shared hub vectors easier;
 - serve as a base while the flow between hub and derived repositories matures.
 
-## API
+## Mirrored public API
+
+Main functions:
 
 - `normalize(value)`
 - `isValid(value, options?)`

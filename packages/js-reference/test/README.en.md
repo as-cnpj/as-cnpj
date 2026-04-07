@@ -1,19 +1,15 @@
 # Tests
 
-Languages: [Portugues (Brasil)](README.md) | **English** | [Espanol](README.es.md) | [Francais](README.fr.md)
+Languages: [Português (Brasil)](README.md) | **English** | [Español](README.es.md) | [Français](README.fr.md)
 
-This folder mirrors the `as-cnpj-js` library test strategy inside the hub.
+This folder documents the testing strategy for `as-cnpj-js`.
 
-The goal is to keep the local copy aligned with:
+It validates:
 
-- positive numeric and alphanumeric cases;
-- negative cases;
-- strict mode validation;
-- API consistency;
-- shared ecosystem vectors.
+- numeric and alphanumeric CNPJ;
+- check digit calculation;
+- normalization and formatting;
+- invalid inputs and repeated values;
+- strict mode behavior;
+- shared test vectors.
 
-Run:
-
-```bash
-node --test --experimental-test-isolation=none packages/js-reference/test/cnpj.test.js
-```

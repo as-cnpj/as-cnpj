@@ -1,6 +1,6 @@
 # Implementation Principles
 
-Languages: [Portugues (Brasil)](principios-de-implementacao.md) | **English** | [Espanol](principios-de-implementacao.es.md) | [Francais](principios-de-implementacao.fr.md)
+Languages: [Português (Brasil)](principios-de-implementacao.md) | **English** | [Español](principios-de-implementacao.es.md) | [Français](principios-de-implementacao.fr.md)
 
 This content was consolidated into the [AS-CNPJ Manifesto](manifesto-as-cnpj.en.md).
 

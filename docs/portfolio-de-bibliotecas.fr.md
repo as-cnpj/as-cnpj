@@ -1,6 +1,6 @@
 # Portefeuille de bibliotheques
 
-Langues: [Portugues (Brasil)](portfolio-de-bibliotecas.md) | [English](portfolio-de-bibliotecas.en.md) | [Espanol](portfolio-de-bibliotecas.es.md) | **Francais**
+Langues: [Português (Brasil)](portfolio-de-bibliotecas.md) | [English](portfolio-de-bibliotecas.en.md) | [Español](portfolio-de-bibliotecas.es.md) | **Français**
 
 Ce depot **n'est pas un catalogue de bibliotheques tierces**.
 

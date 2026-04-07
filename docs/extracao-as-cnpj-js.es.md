@@ -1,6 +1,6 @@
 # Historial de Extraccion de AS-CNPJ JS
 
-Idiomas: [Portugues (Brasil)](extracao-as-cnpj-js.md) | [English](extracao-as-cnpj-js.en.md) | **Espanol** | [Francais](extracao-as-cnpj-js.fr.md)
+Idiomas: [Português (Brasil)](extracao-as-cnpj-js.md) | [English](extracao-as-cnpj-js.en.md) | **Español** | [Français](extracao-as-cnpj-js.fr.md)
 
 ## Objetivo
 

@@ -1,19 +1,15 @@
 # Tests
 
-Langues: [Portugues (Brasil)](README.md) | [English](README.en.md) | [Espanol](README.es.md) | **Francais**
+Langues : [Português (Brasil)](README.md) | [English](README.en.md) | [Español](README.es.md) | **Français**
 
-Ce dossier reproduit la strategie de tests de la bibliotheque `as-cnpj-js` dans le hub.
+Ce dossier documente la stratégie de tests de `as-cnpj-js`.
 
-L'objectif est de garder la copie locale alignee avec:
+Il valide :
 
-- cas positifs numeriques et alphanumeriques;
-- cas negatifs;
-- validation en mode strict;
-- coherence de l'API;
-- vecteurs partages de l'ecosysteme.
+- le CNPJ numérique et alphanumérique ;
+- le calcul des chiffres de contrôle ;
+- la normalisation et le formatage ;
+- les entrées invalides et les répétitions ;
+- le comportement du mode strict ;
+- les vecteurs de test partagés.
 
-Execution:
-
-```bash
-node --test --experimental-test-isolation=none packages/js-reference/test/cnpj.test.js
-```

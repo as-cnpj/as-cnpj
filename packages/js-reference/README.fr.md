@@ -1,22 +1,32 @@
 # AS-CNPJ JS Reference
 
-Langues: [Portugues (Brasil)](README.md) | [English](README.en.md) | [Espanol](README.es.md) | **Francais**
+Langues : [Português (Brasil)](README.md) | [English](README.en.md) | [Español](README.es.md) | **Français**
 
-Ce dossier est la copie de travail de la bibliotheque JavaScript/TypeScript de l'ecosysteme AS-CNPJ dans le hub.
+Ce dossier est la copie de travail de la bibliothèque JavaScript/TypeScript de l'écosystème AS-CNPJ dans le hub.
 
-Le depot public dedie est:
+Le dépôt public dédié est :
 
 - `https://github.com/as-cnpj/as-cnpj-js`
 
-## Role de ce dossier dans le hub
+## Commencez ici
 
-Il existe pour:
+- [API locale](docs/api.md)
+- [Stratégie de tests](test/README.md)
+- [Checklist de release](docs/release-checklist.md)
+- [Politique de sécurité](SECURITY.md)
+- [README public de as-cnpj-js](../../exports/as-cnpj-js/README.md)
 
-- conserver une graine locale pendant l'evolution de l'ecosysteme;
-- faciliter la comparaison avec les vecteurs partages du hub;
-- servir de base pendant que le flux entre le hub et les depots derives se stabilise.
+## Rôle de ce dossier dans le hub
 
-## API
+Il existe pour :
+
+- conserver une graine locale pendant l'évolution de l'écosystème ;
+- faciliter la comparaison avec les vecteurs partagés du hub ;
+- servir de base pendant que le flux entre le hub et les dépôts dérivés se stabilise.
+
+## API publique miroir
+
+Fonctions principales :
 
 - `normalize(value)`
 - `isValid(value, options?)`
@@ -24,7 +34,7 @@ Il existe pour:
 - `assertValid(value, options?)`
 - `calculateCheckDigits(base12)`
 
-Aliases explicites:
+Aliases explicites :
 
 - `normalizeCNPJ(value)`
 - `isValidCNPJ(value, options?)`
@@ -38,8 +48,8 @@ Aliases explicites:
 node --test --experimental-test-isolation=none packages/js-reference/test/cnpj.test.js
 ```
 
-## Reference publique
+## Référence publique
 
-Pour l'usage public, le README, les issues et l'evolution de la bibliotheque, utilisez le depot dedie:
+Pour l'usage public, le README, les issues et l'évolution de la bibliothèque, utilisez le dépôt dédié :
 
 - `https://github.com/as-cnpj/as-cnpj-js`

@@ -1,22 +1,32 @@
 # AS-CNPJ JS Reference
 
-Idiomas: [Portugues (Brasil)](README.md) | [English](README.en.md) | **Espanol** | [Francais](README.fr.md)
+Idiomas: [Português (Brasil)](README.md) | [English](README.en.md) | **Español** | [Français](README.fr.md)
 
 Esta carpeta es la copia de trabajo de la biblioteca JavaScript/TypeScript del ecosistema AS-CNPJ dentro del hub.
 
-El repositorio publico dedicado es:
+El repositorio público dedicado es:
 
 - `https://github.com/as-cnpj/as-cnpj-js`
+
+## Empieza por aquí
+
+- [API local](docs/api.md)
+- [Estrategia de pruebas](test/README.md)
+- [Checklist de release](docs/release-checklist.md)
+- [Política de seguridad](SECURITY.md)
+- [README público de as-cnpj-js](../../exports/as-cnpj-js/README.md)
 
 ## Papel de esta carpeta dentro del hub
 
 Existe para:
 
-- mantener una semilla local durante la evolucion del ecosistema;
-- facilitar la comparacion con los vectores compartidos del hub;
+- mantener una semilla local durante la evolución del ecosistema;
+- facilitar la comparación con los vectores compartidos del hub;
 - servir de base mientras madura el flujo entre el hub y los repositorios derivados.
 
-## API
+## API pública espejada
+
+Funciones principales:
 
 - `normalize(value)`
 - `isValid(value, options?)`
@@ -24,7 +34,7 @@ Existe para:
 - `assertValid(value, options?)`
 - `calculateCheckDigits(base12)`
 
-Aliases explicitos:
+Aliases explícitos:
 
 - `normalizeCNPJ(value)`
 - `isValidCNPJ(value, options?)`
@@ -38,8 +48,8 @@ Aliases explicitos:
 node --test --experimental-test-isolation=none packages/js-reference/test/cnpj.test.js
 ```
 
-## Referencia publica
+## Referencia pública
 
-Para uso publico, README, issues y evolucion de la biblioteca, usa el repositorio dedicado:
+Para uso público, README, issues y evolución de la biblioteca, usa el repositorio dedicado:
 
 - `https://github.com/as-cnpj/as-cnpj-js`

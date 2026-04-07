@@ -1,40 +1,10 @@
-# Decisions
+# Décisions
 
-Langues: [Portugues (Brasil)](decisoes.md) | [English](decisoes.en.md) | [Espanol](decisoes.es.md) | **Francais**
+Langues : [Português (Brasil)](decisoes.md) | [English](decisoes.en.md) | [Español](decisoes.es.md) | **Français**
 
-## 1. JavaScript pur avec ESM
+- JavaScript pur avec ESM pour un noyau petit et auditable ;
+- API courte avec alias génériques et explicites ;
+- mode strict optionnel pour des contrats plus rigides ;
+- vecteurs partagés maintenus dans le hub ;
+- rejet des répétitions triviales.
 
-Motif:
-
-- noyau petit;
-- zero dependance;
-- bonne portabilite;
-- audit facile.
-
-## 2. API courte avec aliases generiques et explicites
-
-Motif:
-
-- `normalize`, `isValid` et `format` ameliorent l'ergonomie;
-- les noms avec `CNPJ` reduisent l'ambiguite dans les bases plus grandes.
-
-## 3. Mode strict optionnel
-
-Motif:
-
-- de nombreux flux recoivent des donnees masquees, non masquees ou bruitees;
-- le mode permissif aide l'integration;
-- le mode strict aide les contrats plus rigides.
-
-## 4. Vecteurs partages dans le hub
-
-Motif:
-
-- la bibliotheque JS ne devient pas la proprietaire exclusive de la verite;
-- les autres ports peuvent prouver leur conformite avec le meme ensemble.
-
-## 5. Rejet des repetitions triviales
-
-Motif:
-
-- evite les faux positifs frequents dans les validateurs simplistes.

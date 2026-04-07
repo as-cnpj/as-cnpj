@@ -1,17 +1,24 @@
-# Politica de Seguridad
+# Política de Seguridad
 
-Idiomas: [Portugues (Brasil)](SECURITY.md) | [English](SECURITY.en.md) | **Espanol** | [Francais](SECURITY.fr.md)
+Idiomas: [Português (Brasil)](SECURITY.md) | [English](SECURITY.en.md) | **Español** | [Français](SECURITY.fr.md)
 
-Esta copia local sigue la misma politica de seguridad del repositorio publicado `as-cnpj-js`.
+## Alcance
 
-Canal preferencial para reportes:
+Esta política cubre:
 
-- GitHub Security Advisories en el repositorio afectado.
+- el núcleo de validación;
+- los vectores de prueba distribuidos con este repositorio;
+- los scripts de build y release de este paquete.
+
+## Reporte de vulnerabilidades
+
+No abra una issue pública.
+
+Canal preferente:
+
+- GitHub Security Advisories en este repositorio.
 
 Canal alternativo:
 
 - `ascnpj@0moura.io`
 
-Referencia publica:
-
-- `https://github.com/as-cnpj/as-cnpj-js`

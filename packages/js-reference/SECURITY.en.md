@@ -1,17 +1,24 @@
 # Security Policy
 
-Languages: [Portugues (Brasil)](SECURITY.md) | **English** | [Espanol](SECURITY.es.md) | [Francais](SECURITY.fr.md)
+Languages: [Português (Brasil)](SECURITY.md) | **English** | [Español](SECURITY.es.md) | [Français](SECURITY.fr.md)
 
-This local copy follows the same security policy as the published `as-cnpj-js` repository.
+## Scope
 
-Preferred reporting channel:
+This policy covers:
 
-- GitHub Security Advisories in the affected repository.
+- the validation core;
+- the test vectors shipped with this repository;
+- build and release scripts for this package.
+
+## Reporting a vulnerability
+
+Do not open a public issue.
+
+Preferred channel:
+
+- GitHub Security Advisories in this repository.
 
 Alternative channel:
 
 - `ascnpj@0moura.io`
 
-Public reference:
-
-- `https://github.com/as-cnpj/as-cnpj-js`

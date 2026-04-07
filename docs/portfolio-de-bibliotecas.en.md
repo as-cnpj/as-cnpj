@@ -1,6 +1,6 @@
 # Library Portfolio
 
-Languages: [Portugues (Brasil)](portfolio-de-bibliotecas.md) | **English** | [Espanol](portfolio-de-bibliotecas.es.md) | [Francais](portfolio-de-bibliotecas.fr.md)
+Languages: [Português (Brasil)](portfolio-de-bibliotecas.md) | **English** | [Español](portfolio-de-bibliotecas.es.md) | [Français](portfolio-de-bibliotecas.fr.md)
 
 This repository **is not a catalog of third-party libraries**.
 

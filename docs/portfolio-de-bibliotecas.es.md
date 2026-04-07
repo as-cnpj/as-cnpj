@@ -1,6 +1,6 @@
 # Portafolio de Bibliotecas
 
-Idiomas: [Portugues (Brasil)](portfolio-de-bibliotecas.md) | [English](portfolio-de-bibliotecas.en.md) | **Espanol** | [Francais](portfolio-de-bibliotecas.fr.md)
+Idiomas: [Português (Brasil)](portfolio-de-bibliotecas.md) | [English](portfolio-de-bibliotecas.en.md) | **Español** | [Français](portfolio-de-bibliotecas.fr.md)
 
 Este repositorio **no es un catalogo de bibliotecas de terceros**.
 

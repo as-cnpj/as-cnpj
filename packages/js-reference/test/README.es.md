@@ -1,19 +1,15 @@
 # Pruebas
 
-Idiomas: [Portugues (Brasil)](README.md) | [English](README.en.md) | **Espanol** | [Francais](README.fr.md)
+Idiomas: [Português (Brasil)](README.md) | [English](README.en.md) | **Español** | [Français](README.fr.md)
 
-Esta carpeta replica la estrategia de pruebas de la biblioteca `as-cnpj-js` dentro del hub.
+Esta carpeta documenta la estrategia de pruebas de `as-cnpj-js`.
 
-El objetivo es mantener la copia local alineada con:
+Valida:
 
-- casos positivos numericos y alfanumericos;
-- casos negativos;
-- validacion en modo estricto;
-- consistencia de la API;
-- vectores compartidos del ecosistema.
+- CNPJ numérico y alfanumérico;
+- cálculo de dígitos verificadores;
+- normalización y formato;
+- entradas inválidas y repeticiones;
+- comportamiento del modo estricto;
+- vectores de prueba compartidos.
 
-Ejecucion:
-
-```bash
-node --test --experimental-test-isolation=none packages/js-reference/test/cnpj.test.js
-```

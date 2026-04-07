@@ -1,15 +1,14 @@
 # Contributing
 
-Languages: [Portugues (Brasil)](CONTRIBUTING.md) | **English** | [Espanol](CONTRIBUTING.es.md) | [Francais](CONTRIBUTING.fr.md)
+Languages: [Português (Brasil)](CONTRIBUTING.md) | **English** | [Español](CONTRIBUTING.es.md) | [Français](CONTRIBUTING.fr.md)
 
-This local copy follows the same contribution policy as the published `as-cnpj-js` repository.
+`as-cnpj-js` accepts contributions, but it follows maintainer-led curation.
 
-For public usage and external contributions, the reference repository is:
+- external PRs are welcome;
+- final merge decisions belong to the maintainers;
+- proposals may be rejected if they diverge from the library contract or ecosystem strategy.
 
-- `https://github.com/as-cnpj/as-cnpj-js`
+Every PR requires review from at least one maintainer listed in `CODEOWNERS`.
 
-While this copy exists in the hub:
+Do not use public issues for vulnerabilities. See [SECURITY.md](SECURITY.md).
 
-- preserve consistency with the shared vectors;
-- do not introduce API divergence without alignment in the hub;
-- keep tests and documentation synchronized with the dedicated repository.

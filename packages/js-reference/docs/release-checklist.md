@@ -1,30 +1,38 @@
 # Release Checklist
 
-Idiomas: **Portugues (Brasil)** | [English](release-checklist.en.md) | [Espanol](release-checklist.es.md) | [Francais](release-checklist.fr.md)
+Idiomas: **Português (Brasil)** | [English](release-checklist.en.md) | [Español](release-checklist.es.md) | [Français](release-checklist.fr.md)
 
-Checklist espelhado da biblioteca `as-cnpj-js`.
+## Regra
 
-Ele existe no hub para manter a copia local alinhada com o repositorio publicado.
+Nenhum push público deve acontecer sem revisar este checklist.
 
-## Conteudo publico
+## Conteúdo Público
 
-- README coerente com o estado real do repo.
-- Sem texto residual de seed, extracao ou rascunho interno.
+- README revisado e coerente com o estado real do projeto.
+- Sem texto residual de seed, extração ou rascunho interno.
 - Sem links quebrados para hub, issues, homepage ou repos inexistentes.
 - Changelog coerente com o estado da release.
-- Metadados do pacote consistentes com o repositorio publicado.
+- Metadados do pacote consistentes com o repositório publicado.
 
-## Validacao tecnica
+## Validação Técnica
 
-- `node --check packages/js-reference/src/cnpj.js`
-- `node --check packages/js-reference/src/index.js`
-- `node --check packages/js-reference/test/cnpj.test.js`
-- `node --test --experimental-test-isolation=none packages/js-reference/test/cnpj.test.js`
+- `node --check src/cnpj.js`
+- `node --check src/index.js`
+- `node --check test/cnpj.test.js`
+- `node --test --experimental-test-isolation=none test/cnpj.test.js`
 
-## Publicacao
+## Publicação
 
 - `package.json` com `name`, `version`, `repository`, `bugs`, `homepage` e `publishConfig` corretos.
-- Licenca definida.
+- Licença definida.
 - Vetores compartilhados presentes.
-- API documentada.
-- Decisoes principais documentadas.
+- API documentada em `docs/api.md`.
+- Decisões principais documentadas em `docs/decisoes.md`.
+
+## Gate final
+
+Só publicar quando:
+
+- o conteúdo estiver apto para leitura pública;
+- os testes estiverem verdes;
+- o pacote estiver apto para distribuição.

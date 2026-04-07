@@ -1,17 +1,37 @@
-# Politica de Seguranca
+# Política de Segurança
 
-Idiomas: **Portugues (Brasil)** | [English](SECURITY.en.md) | [Espanol](SECURITY.es.md) | [Francais](SECURITY.fr.md)
+Idiomas: **Português (Brasil)** | [English](SECURITY.en.md) | [Español](SECURITY.es.md) | [Français](SECURITY.fr.md)
 
-Esta copia local segue a mesma politica de seguranca do repositorio publicado `as-cnpj-js`.
+## Escopo
 
-Canal preferencial para reportes:
+Esta política cobre:
 
-- GitHub Security Advisories no repositorio afetado.
+- o núcleo de validação;
+- os vetores de teste distribuídos com este repositório;
+- scripts de build e release deste pacote.
+
+## Como Reportar uma Vulnerabilidade
+
+**Não abra issue pública.**
+
+Canal preferencial:
+
+- GitHub Security Advisories neste repositório.
 
 Canal alternativo:
 
 - `ascnpj@0moura.io`
 
-Referencia publica:
+## O Que Incluir
 
-- `https://github.com/as-cnpj/as-cnpj-js`
+- descrição clara do problema;
+- passos para reproduzir;
+- versão afetada ou commit;
+- impacto estimado;
+- possível mitigação, se houver.
+
+## Compromisso de Resposta
+
+- confirmação de recebimento em até 3 dias úteis;
+- avaliação inicial em até 7 dias úteis;
+- mitigação ou correção em até 30 dias após a confirmação, quando aplicável.

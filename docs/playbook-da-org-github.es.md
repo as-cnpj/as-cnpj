@@ -1,6 +1,6 @@
 # Playbook de la Org de GitHub
 
-Idiomas: [Portugues (Brasil)](playbook-da-org-github.md) | [English](playbook-da-org-github.en.md) | **Espanol** | [Francais](playbook-da-org-github.fr.md)
+Idiomas: [Português (Brasil)](playbook-da-org-github.md) | [English](playbook-da-org-github.en.md) | **Español** | [Français](playbook-da-org-github.fr.md)
 
 ## Objetivo
 
