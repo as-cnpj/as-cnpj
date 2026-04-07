@@ -1,0 +1,65 @@
+{
+  "org": {
+    "name": "as-cnpj",
+    "url": "https://github.com/as-cnpj"
+  },
+  "repositories": [
+  {
+    "repo": "as-cnpj",
+    "type": "hub",
+    "language": "documentation",
+    "status": "active",
+    "purpose": "Repositorio centralizador, banner publico, especificacao, vetores de teste e governanca."
+  },
+  {
+    "repo": "as-cnpj-js",
+    "type": "library",
+    "language": "JavaScript/TypeScript",
+    "status": "published-repository",
+    "package_names": [
+      "@as-cnpj/core"
+    ],
+    "purpose": "Biblioteca autoral para browser, Node.js e TypeScript."
+  },
+  {
+    "repo": "as-cnpj-python",
+    "type": "library",
+    "language": "Python",
+    "status": "planned",
+    "package_names": [
+      "as-cnpj"
+    ],
+    "purpose": "Biblioteca autoral para Python."
+  },
+  {
+    "repo": "as-cnpj-java",
+    "type": "library",
+    "language": "Java",
+    "status": "planned",
+    "package_names": [
+      "br.com.ascnpj:as-cnpj"
+    ],
+    "purpose": "Biblioteca autoral para Java."
+  },
+  {
+    "repo": "as-cnpj-dotnet",
+    "type": "library",
+    "language": "C#/.NET",
+    "status": "planned",
+    "package_names": [
+      "AsCnpj"
+    ],
+    "purpose": "Biblioteca autoral para .NET."
+  },
+  {
+    "repo": "as-cnpj-go",
+    "type": "library",
+    "language": "Go",
+    "status": "planned",
+    "package_names": [
+      "github.com/as-cnpj/go"
+    ],
+    "purpose": "Biblioteca autoral para Go."
+  }
+  ]
+}

@@ -1,0 +1,11 @@
+# Responsaveis pelo ecossistema AS-CNPJ
+# Cada PR precisa de aprovacao de pelo menos um owner listado aqui.
+
+# Hub (docs, vetores, governanca)
+* @0moura
+
+# Vetores de teste compartilhados
+/vectors/ @0moura
+
+# Semente da biblioteca JS
+/packages/js-reference/ @0moura
