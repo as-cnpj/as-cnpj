@@ -17,7 +17,7 @@
     "language": "JavaScript/TypeScript",
     "status": "published-repository",
     "package_names": [
-      "@as-cnpj/core"
+      "@ascnpj/core"
     ],
     "purpose": "Biblioteca autoral para browser, Node.js e TypeScript."
   },

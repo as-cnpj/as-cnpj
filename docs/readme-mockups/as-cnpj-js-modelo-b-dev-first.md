@@ -28,7 +28,7 @@ import {
   format,
   isValid,
   normalize
-} from "@as-cnpj/core";
+} from "@ascnpj/core";
 
 normalize("12.abc.345/01de-35");
 isValid("12.ABC.345/01DE-35");

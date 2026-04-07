@@ -4,3 +4,7 @@ coverage/
 .claude/
 exports/
 *.log
+.env
+.env.*
+!.env.example
+.npmrc

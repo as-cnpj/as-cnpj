@@ -50,7 +50,7 @@ Cet ordre a du sens car:
 - repo hub: `as-cnpj`
 - repos par langage: `as-cnpj-js`, `as-cnpj-python`, `as-cnpj-java`, `as-cnpj-dotnet`
 - packages suggeres:
-  - npm: `@as-cnpj/core`
+  - npm: `@ascnpj/core`
   - PyPI: `as-cnpj`
   - Maven: `br.com.ascnpj:as-cnpj`
   - NuGet: `AsCnpj`

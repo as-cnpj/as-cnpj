@@ -20,7 +20,7 @@ Each language repository centralizes only the code for that language.
 - hub: `as-cnpj`
 - derived repositories: `as-cnpj-{language}`
 - suggested packages:
-  - npm: `@as-cnpj/core`
+  - npm: `@ascnpj/core`
   - PyPI: `as-cnpj`
   - Maven: `br.com.ascnpj:as-cnpj`
   - NuGet: `AsCnpj`

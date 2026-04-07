@@ -73,6 +73,7 @@ Esse último ponto importa muito: nenhuma biblioteca da família deve assumir qu
 - [Registro estruturado dos repositórios do ecossistema](catalog/repos-oficiais.json)
 - [Vetores compartilhados](vectors/cnpj.json) | [Schema](vectors/cnpj.schema.json)
 - [Política de segurança](SECURITY.md)
+- [Auditoria de segurança](AUDIT.md)
 - [Política de contribuição](CONTRIBUTING.md)
 - [Referência local da biblioteca JS](packages/js-reference/README.md)
 

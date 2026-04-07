@@ -20,7 +20,7 @@ Chaque depot par langage centralise uniquement le code de ce langage.
 - hub: `as-cnpj`
 - depots derives: `as-cnpj-{langage}`
 - packages suggeres:
-  - npm: `@as-cnpj/core`
+  - npm: `@ascnpj/core`
   - PyPI: `as-cnpj`
   - Maven: `br.com.ascnpj:as-cnpj`
   - NuGet: `AsCnpj`
