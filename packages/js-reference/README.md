@@ -1,29 +1,32 @@
 # AS-CNPJ JS Reference
 
-Idiomas: **Portugues (Brasil)** | [English](README.en.md) | [Espanol](README.es.md) | [Francais](README.fr.md)
+Idiomas: **Português (Brasil)** | [English](README.en.md) | [Español](README.es.md) | [Français](README.fr.md)
 
-Esta pasta e a copia de trabalho da biblioteca JavaScript/TypeScript do ecossistema AS-CNPJ.
+Esta pasta é a cópia de trabalho da biblioteca JavaScript/TypeScript do ecossistema AS-CNPJ dentro do hub.
 
-O repositorio dedicado da biblioteca agora e:
+O repositório dedicado da biblioteca é:
 
 - `https://github.com/as-cnpj/as-cnpj-js`
 
-## Referencias rapidas
+## Comece por aqui
 
 - [API local](docs/api.md)
-- [Estrategia de testes](test/README.md)
+- [Estratégia de testes](test/README.md)
 - [Checklist de release](docs/release-checklist.md)
-- [Politica de seguranca](SECURITY.md)
+- [Política de segurança](SECURITY.md)
+- [README público do as-cnpj-js](../../exports/as-cnpj-js/README.md)
 
 ## Papel desta pasta dentro do hub
 
 Ela existe para:
 
-- manter uma semente local durante a evolucao do ecossistema;
-- facilitar comparacao com vetores compartilhados do hub;
+- manter uma semente local durante a evolução do ecossistema;
+- facilitar comparação com vetores compartilhados do hub;
 - servir de base enquanto o fluxo entre hub e repos derivados amadurece.
 
-## API
+## API pública espelhada
+
+Funções principais:
 
 - `normalize(value)`
 - `isValid(value, options?)`
@@ -31,7 +34,7 @@ Ela existe para:
 - `assertValid(value, options?)`
 - `calculateCheckDigits(base12)`
 
-Aliases explicitos:
+Aliases explícitos:
 
 - `normalizeCNPJ(value)`
 - `isValidCNPJ(value, options?)`
@@ -45,8 +48,8 @@ Aliases explicitos:
 node --test --experimental-test-isolation=none packages/js-reference/test/cnpj.test.js
 ```
 
-## Fonte oficial
+## Referência pública
 
-Para uso publico, README, issues e evolucao da biblioteca, use o repo dedicado:
+Para uso público, README, issues e evolução da biblioteca, use o repo dedicado:
 
 - `https://github.com/as-cnpj/as-cnpj-js`
