@@ -53,3 +53,9 @@ node --test --experimental-test-isolation=none packages/js-reference/test/cnpj.t
 For public usage, README, issues, and library evolution, use the dedicated repository:
 
 - `https://github.com/as-cnpj/as-cnpj-js`
+
+## Publication
+
+- npm package: `@ascnpj/core`
+- release workflow located at `.github/workflows/release.yml`
+- publication with `provenance` via GitHub Release
