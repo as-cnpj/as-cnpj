@@ -36,6 +36,34 @@ Todo README de repo derivado deve responder rapidamente:
 - como rodar testes;
 - status de estabilidade.
 
+## Modelo Padrão de README
+
+O modelo editorial recomendado para novos repos da família agora é o **modelo executivo** adotado em `as-cnpj-js`.
+
+Template reutilizável:
+
+- [Template de README executivo](template-readme-executivo-da-familia.md)
+
+Esse template deve ser tratado como base preferencial para:
+
+- `as-cnpj-python`
+- `as-cnpj-java`
+- `as-cnpj-dotnet`
+- `as-cnpj-go`
+
+Adaptações por linguagem são esperadas, mas a estrutura principal deve permanecer reconhecível:
+
+- status;
+- comece por aqui;
+- problema que a biblioteca resolve;
+- garantias centrais;
+- API pública;
+- exemplo mínimo;
+- testes;
+- vetores compartilhados;
+- ecossistema;
+- manutenção.
+
 ## API Mínima Esperada
 
 Sempre que a linguagem permitir, manter este contrato conceitual:
