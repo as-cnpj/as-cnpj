@@ -22,7 +22,7 @@ The hub exists to:
 | --- | --- | --- |
 | `as-cnpj` | Central hub, documentation, test vectors, governance, and overview | Current |
 | `as-cnpj-js` | Author library for JavaScript/TypeScript | Published |
-| `as-cnpj-python` | Author library for Python | Planned |
+| `as-cnpj-python` | Author library for Python | Local seed in the hub |
 | `as-cnpj-java` | Author library for Java | Planned |
 | `as-cnpj-dotnet` | Author library for C# /.NET | Planned |
 | `as-cnpj-go` | Author library for Go | Planned |
@@ -76,3 +76,11 @@ Even after publishing derived repositories:
 - the template for new repositories stays in the hub.
 
 This prevents each language from starting to invent its own version of the project.
+
+## Next move
+
+The next recommended repo in the org is now `as-cnpj-python`.
+
+The local seed already exists in:
+
+- `packages/python-reference`
