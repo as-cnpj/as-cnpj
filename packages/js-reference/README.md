@@ -1,12 +1,20 @@
+<div align="center">
+  <img src="assets/brand/as-cnpj-logo-light.svg" alt="AS-CNPJ JS Reference" width="860" />
+</div>
+
 # AS-CNPJ JS Reference
 
 Idiomas: **Português (Brasil)** | [English](README.en.md) | [Español](README.es.md) | [Français](README.fr.md)
 
-Esta pasta é a cópia de trabalho da biblioteca JavaScript/TypeScript do ecossistema AS-CNPJ dentro do hub.
+Esta pasta é a semente local da biblioteca JavaScript/TypeScript do ecossistema AS-CNPJ dentro do hub.
 
-O repositório dedicado da biblioteca é:
+Repositório público:
 
 - `https://github.com/as-cnpj/as-cnpj-js`
+
+Pacote publicado:
+
+- [`@ascnpj/core`](https://www.npmjs.com/package/@ascnpj/core)
 
 ## Comece por aqui
 
@@ -19,16 +27,12 @@ O repositório dedicado da biblioteca é:
 
 ## Papel desta pasta dentro do hub
 
-Ela existe para:
-
 - manter uma semente local durante a evolução do ecossistema;
 - facilitar comparação com vetores compartilhados do hub;
-- servir de base enquanto o fluxo entre hub e repos derivados amadurece;
+- servir de base para fluxos de extração controlada;
 - espelhar o contrato funcional da biblioteca já publicada.
 
 ## O que esta referência cobre
-
-Esta referência espelha a proposta do runtime público:
 
 - validação de CNPJ legado numérico;
 - validação de CNPJ alfanumérico;
@@ -39,38 +43,24 @@ Esta referência espelha a proposta do runtime público:
 
 ## API pública espelhada
 
-Funções principais:
-
 - `normalize(value)`
 - `isValid(value, options?)`
 - `format(value, options?)`
 - `assertValid(value, options?)`
 - `calculateCheckDigits(base12)`
-
-Aliases explícitos:
-
 - `normalizeCNPJ(value)`
 - `isValidCNPJ(value, options?)`
 - `formatCNPJ(value, options?)`
 - `assertValidCNPJ(value, options?)`
 - `calculateCNPJCheckDigits(base12)`
 
-## Exemplos rápidos
-
-Validação e normalização:
+## Exemplo rápido
 
 ```js
-import { isValid, normalize } from "@ascnpj/core";
+import { format, isValid, normalize } from "@ascnpj/core";
 
 isValid("12.ABC.345/01DE-35");
 normalize("12.abc.345/01de-35");
-```
-
-Formatação para UI:
-
-```js
-import { format } from "@ascnpj/core";
-
 format("12ABC34501DE35");
 ```
 
@@ -79,15 +69,3 @@ format("12ABC34501DE35");
 ```bash
 node packages/js-reference/test/run.js
 ```
-
-## Referência pública
-
-Para uso público, issues, README final e evolução da biblioteca, use o repo dedicado:
-
-- `https://github.com/as-cnpj/as-cnpj-js`
-
-## Publicação
-
-- pacote npm: [`@ascnpj/core`](https://www.npmjs.com/package/@ascnpj/core)
-- workflow de release em `.github/workflows/release.yml`
-- Trusted Publishing via GitHub Actions

@@ -29,6 +29,7 @@ $allowedRootFiles = @(
 
 $allowedDirectories = @(
   ".github",
+  "assets",
   "docs",
   "src",
   "test"

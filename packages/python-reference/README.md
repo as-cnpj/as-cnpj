@@ -1,10 +1,14 @@
+<div align="center">
+  <img src="assets/brand/as-cnpj-logo-light.svg" alt="AS-CNPJ Python Reference" width="860" />
+</div>
+
 # AS-CNPJ Python Reference
 
 Idiomas: **Português (Brasil)** | [English](README.en.md) | [Español](README.es.md) | [Français](README.fr.md)
 
-Esta pasta é a cópia de trabalho da biblioteca Python do ecossistema AS-CNPJ dentro do hub.
+Esta pasta é a semente local da biblioteca Python do ecossistema AS-CNPJ dentro do hub.
 
-O repositório público da biblioteca é:
+Repositório público:
 
 - `https://github.com/as-cnpj/as-cnpj-python`
 
@@ -19,16 +23,12 @@ O repositório público da biblioteca é:
 
 ## Papel desta pasta dentro do hub
 
-Ela existe para:
-
 - manter uma semente local enquanto o contrato do ecossistema evolui;
 - facilitar comparação com vetores compartilhados do hub;
 - permitir ajustes sincronizados entre o hub e o repo derivado;
 - servir como base controlada para futuras extrações ou reorganizações.
 
 ## O que esta referência cobre
-
-Esta referência espelha a proposta do runtime público:
 
 - validação de CNPJ legado numérico;
 - validação de CNPJ alfanumérico;
@@ -39,38 +39,24 @@ Esta referência espelha a proposta do runtime público:
 
 ## API pública espelhada
 
-Funções principais:
-
 - `normalize(value)`
 - `is_valid(value, strict=False)`
 - `format(value, strict=False)`
 - `assert_valid(value, strict=False)`
 - `calculate_check_digits(base12)`
-
-Aliases explícitos:
-
 - `normalize_cnpj(value)`
 - `is_valid_cnpj(value, strict=False)`
 - `format_cnpj(value, strict=False)`
 - `assert_valid_cnpj(value, strict=False)`
 - `calculate_cnpj_check_digits(base12)`
 
-## Exemplos rápidos
-
-Validação e normalização:
+## Exemplo rápido
 
 ```python
-from as_cnpj import is_valid, normalize
+from as_cnpj import format_cnpj, is_valid, normalize
 
 is_valid("12.ABC.345/01DE-35")
 normalize("12.abc.345/01de-35")
-```
-
-Formatação para exibição:
-
-```python
-from as_cnpj import format_cnpj
-
 format_cnpj("12ABC34501DE35")
 ```
 
@@ -87,12 +73,6 @@ CI planejada para o repo derivado:
 - `Python 3.12`
 - `Python 3.13`
 - `Python 3.14`
-
-## Referência pública
-
-Para uso real, issues, evolução do README e governança do runtime, use o repo dedicado:
-
-- `https://github.com/as-cnpj/as-cnpj-python`
 
 ## Publicação
 

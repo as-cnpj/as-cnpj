@@ -1,49 +1,72 @@
-# AS-CNPJ
+<div align="center">
+  <img src="assets/brand/as-cnpj-logo-light.svg" alt="AS-CNPJ" width="860" />
+</div>
+
+<p align="center">
+  Ecossistema autoral de bibliotecas para CNPJ numérico e alfanumérico, com contrato compartilhado entre linguagens, vetores oficiais e documentação consolidada.
+</p>
+
+<p align="center">
+  <a href="https://as-cnpj.org">Site</a> ·
+  <a href="https://github.com/as-cnpj">Org GitHub</a> ·
+  <a href="vectors/cnpj.json">Vetores compartilhados</a> ·
+  <a href="AUDIT.md">Auditoria</a> ·
+  <a href="SECURITY.md">Segurança</a>
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@ascnpj/core"><img alt="npm @ascnpj/core" src="https://img.shields.io/npm/v/%40ascnpj%2Fcore?style=flat-square&label=npm&labelColor=1C1917&color=F97316"></a>
+  <a href="https://github.com/as-cnpj/as-cnpj-js/actions/workflows/ci.yml"><img alt="CI as-cnpj-js" src="https://img.shields.io/github/actions/workflow/status/as-cnpj/as-cnpj-js/ci.yml?branch=main&style=flat-square&label=as-cnpj-js&labelColor=1C1917"></a>
+  <a href="https://github.com/as-cnpj/as-cnpj-python/actions/workflows/ci.yml"><img alt="CI as-cnpj-python" src="https://img.shields.io/github/actions/workflow/status/as-cnpj/as-cnpj-python/ci.yml?branch=main&style=flat-square&label=as-cnpj-python&labelColor=1C1917"></a>
+  <a href="LICENSE"><img alt="License MIT" src="https://img.shields.io/github/license/as-cnpj/as-cnpj?style=flat-square&label=license&labelColor=1C1917&color=84A870"></a>
+</p>
 
 Idiomas: **Português (Brasil)** | [English](README.en.md) | [Español](README.es.md) | [Français](README.fr.md)
-
-Ecossistema autoral de bibliotecas para CNPJ numérico e alfanumérico.
-
-Site: https://as-cnpj.org · Org GitHub: https://github.com/as-cnpj
 
 ## Bibliotecas publicadas
 
 Use estes links como ponto de entrada do ecossistema:
 
 - [as-cnpj-js](https://github.com/as-cnpj/as-cnpj-js) | JavaScript/TypeScript | pacote npm [`@ascnpj/core`](https://www.npmjs.com/package/@ascnpj/core)
-- [as-cnpj-python](https://github.com/as-cnpj/as-cnpj-python) | Python | repositório público ativo
+- [as-cnpj-python](https://github.com/as-cnpj/as-cnpj-python) | Python | repositório público ativo, com publicação no PyPI como próximo passo natural
 
-## Visão
+## Por que este hub existe
 
-O projeto **AS-CNPJ** existe para resolver um problema real de engenharia: a transição do CNPJ para o formato alfanumérico, anunciada pela Receita Federal para **julho de 2026**, exige implementações corretas, auditáveis e consistentes entre linguagens.
+O projeto **AS-CNPJ** nasceu para tratar um problema real de engenharia: a transição do CNPJ para o formato alfanumérico, anunciada pela Receita Federal para **julho de 2026**, exige implementações corretas, auditáveis e consistentes entre linguagens.
 
-Este repositório `as-cnpj` é o **hub central** da org. Ele não é a biblioteca final de produção de uma linguagem específica. Ele centraliza:
+Este repositório `as-cnpj` é a homepage técnica da org. Ele concentra:
 
-- posicionamento do ecossistema;
-- documentação oficial consolidada;
-- regras técnicas compartilhadas;
-- vetores de teste e contratos de comportamento;
-- governança dos repositórios da família;
-- cópias locais de referência quando isso ajudar na evolução dos repos derivados.
+- manifesto, princípios e critérios de qualidade do ecossistema;
+- regras oficiais consolidadas a partir das fontes da Receita Federal;
+- vetores compartilhados e schema versionado;
+- governança, segurança e auditoria;
+- seeds locais usadas para manter coerência entre os repos derivados.
+
+## Comece por aqui
+
+- [Manifesto e princípios](docs/manifesto-as-cnpj.md)
+- [Fontes oficiais e regras de negócio](docs/fontes-oficiais-e-regras.md)
+- [Vetores compartilhados](vectors/cnpj.json)
+- [Schema dos vetores](vectors/cnpj.schema.json)
+- [Portfólio do ecossistema](docs/portfolio-de-bibliotecas.md)
+- [Template de repositórios da família](docs/template-repos-da-familia.md)
+- [Política de segurança](SECURITY.md)
+- [Auditoria de segurança](AUDIT.md)
+
+## Casos de uso que o ecossistema cobre
+
+- formulários e cadastros B2B que precisam aceitar o CNPJ legado e o alfanumérico;
+- APIs e backends que normalizam CNPJ antes de persistir ou integrar com ERP;
+- integrações com faturamento, compliance, onboarding e KYC;
+- suites de teste e homologação que precisam gerar e validar CNPJs consistentes.
 
 ## Modelo do ecossistema
 
-O modelo adotado agora é simples:
-
 - **1 org**: `as-cnpj`
-- **1 repo central**: `as-cnpj`
+- **1 hub central**: `as-cnpj`
 - **1 repo por biblioteca**: `as-cnpj-js`, `as-cnpj-python`, `as-cnpj-java`, `as-cnpj-dotnet`, `as-cnpj-go`
 
-Esse modelo reduz mistura entre documentação, governança e código de runtime.
-
-## Princípios
-
-- implementação própria, sem copiar código de terceiros;
-- base oficial da Receita Federal;
-- mesmo comportamento funcional entre linguagens;
-- testes automatizados como contrato;
-- API pequena e auditavel;
-- suporte simultâneo ao CNPJ legado e ao alfanumérico.
+Esse modelo separa documentação, governança, vetores e código de runtime sem espalhar a fonte de verdade.
 
 ## Fatos oficiais que impactam todas as libs
 
@@ -55,73 +78,45 @@ Esse modelo reduz mistura entre documentação, governança e código de runtime
 - o DV continua em módulo 11 com conversão `ASCII - 48`;
 - mesmo após julho de 2026, ainda pode haver nova inscrição totalmente numérica.
 
-Esse último ponto importa muito: nenhuma biblioteca da família deve assumir que "novo CNPJ" significa "CNPJ com letra".
+Esse último ponto impede uma simplificação perigosa: nenhuma biblioteca da família pode assumir que "novo CNPJ" significa obrigatoriamente "CNPJ com letra".
 
-## Repositórios da Família
+## Repositórios da família
 
 | Repo | Papel | Estado |
 | --- | --- | --- |
-| `as-cnpj` | Hub central, manifesto, especificação, vetores de teste e governança | Atual |
+| `as-cnpj` | Hub central, manifesto, vetores, auditoria e governança | Atual |
 | `as-cnpj-js` | Biblioteca autoral para JavaScript/TypeScript | Publicado |
 | `as-cnpj-python` | Biblioteca autoral para Python | Publicado |
 | `as-cnpj-java` | Biblioteca autoral para Java | Planejado |
 | `as-cnpj-dotnet` | Biblioteca autoral para C# /.NET | Planejado |
 | `as-cnpj-go` | Biblioteca autoral para Go | Planejado |
 
-## O que existe hoje neste hub
+## Seeds locais dentro do hub
 
-- [Manifesto e princípios de implementação](docs/manifesto-as-cnpj.md)
-- [Fontes oficiais da Receita Federal e regras](docs/fontes-oficiais-e-regras.md)
-- [Portfólio das bibliotecas do ecossistema](docs/portfolio-de-bibliotecas.md)
-- [Template padrão para repos da família](docs/template-repos-da-familia.md)
-- [Roadmap dos repositórios](docs/roadmap-dos-repositorios.md)
-- [Playbook da org GitHub (naming, governança, visual)](docs/playbook-da-org-github.md)
-- [Histórico da extração do as-cnpj-js](docs/extracao-as-cnpj-js.md)
-- [Registro estruturado dos repositórios do ecossistema](catalog/repos-oficiais.json)
-- [Vetores compartilhados](vectors/cnpj.json) | [Schema](vectors/cnpj.schema.json)
-- [Política de segurança](SECURITY.md)
-- [Auditoria de segurança](AUDIT.md)
-- [Política de contribuição](CONTRIBUTING.md)
 - [Referência local da biblioteca JS](packages/js-reference/README.md)
 - [Referência local da biblioteca Python](packages/python-reference/README.md)
-- [Repositório público as-cnpj-js](https://github.com/as-cnpj/as-cnpj-js)
-- [Repositório público as-cnpj-python](https://github.com/as-cnpj/as-cnpj-python)
 
-## Ordem recomendada
+Essas pastas existem para manter a extração e a evolução dos runtimes sob controle, sem transformar o hub em monorepo de produção.
 
-1. consolidar especificação, manifesto e vetores de teste no hub;
-2. estabilizar a API pública em JS/TS no repo `as-cnpj-js`;
-3. portar o mesmo contrato para Python, Java, .NET e Go;
-4. publicar releases independentes por repo somente após convergência dos testes;
-5. manter o hub como fonte de verdade de vetores, manifesto e governança.
-
-## Testes
-
-```bash
-node packages/js-reference/test/run.js
-```
-
-Ou:
+## Testes do hub
 
 ```bash
 npm.cmd test
 ```
 
-## Extração Local de Futuros Repos
+Ou, se quiser rodar só a referência JS:
 
-O script atual existe por razões históricas e como base para futuros fluxos de extração controlada:
+```bash
+node packages/js-reference/test/run.js
+```
+
+## Extração local de futuros repos
+
+O fluxo de extração continua disponível para manutenção das seeds:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\prepare-as-cnpj-js.ps1
 ```
-
-Exemplo com destino customizado:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\prepare-as-cnpj-js.ps1 -Destination ..\as-cnpj-js
-```
-
-Para a semente Python:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\prepare-as-cnpj-python.ps1
@@ -129,17 +124,11 @@ powershell -ExecutionPolicy Bypass -File .\scripts\prepare-as-cnpj-python.ps1
 
 ## Manutenção
 
-Maintainer: **@0moura**
+Maintainer: **@0moura**  
 Contato institucional: **ascnpj@0moura.io**
 
 - [Site e documentação](https://as-cnpj.org)
 - [Comunidade e apoiadores](https://as-cnpj.org/pt/community)
+- [Como contribuir](CONTRIBUTING.md)
 - [Política de segurança](SECURITY.md)
 - [Auditoria de segurança](AUDIT.md)
-- [Como contribuir](CONTRIBUTING.md)
-
-## Direção Atual
-
-Este repositório deve ficar cada vez melhor como **homepage técnica da org**.
-
-As bibliotecas produtivas devem viver em repos próprios.
