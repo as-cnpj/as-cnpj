@@ -8,3 +8,4 @@ exports/
 !.env.example
 .npmrc
 site-mockups/
+banners/
