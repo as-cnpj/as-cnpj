@@ -22,7 +22,7 @@ O hub existe para:
 | --- | --- | --- |
 | `as-cnpj` | Hub central, documentação, vetores de teste, governança e visão geral | Atual |
 | `as-cnpj-js` | Biblioteca autoral para JavaScript/TypeScript | Publicado |
-| `as-cnpj-python` | Biblioteca autoral para Python | Planejado |
+| `as-cnpj-python` | Biblioteca autoral para Python | Publicado |
 | `as-cnpj-java` | Biblioteca autoral para Java | Planejado |
 | `as-cnpj-dotnet` | Biblioteca autoral para C# /.NET | Planejado |
 | `as-cnpj-go` | Biblioteca autoral para Go | Planejado |
@@ -76,3 +76,7 @@ Mesmo após a publicação dos repos derivados:
 - o template de novos repos fica no hub.
 
 Isso evita que cada linguagem comece a "inventar sua própria versão" do projeto.
+
+## Próximo Movimento
+
+Com `as-cnpj-js` e `as-cnpj-python` já publicados, o próximo movimento recomendado da org passa a ser `as-cnpj-java`.

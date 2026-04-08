@@ -56,7 +56,7 @@ Esse último ponto importa muito: nenhuma biblioteca da família deve assumir qu
 | --- | --- | --- |
 | `as-cnpj` | Hub central, manifesto, especificação, vetores de teste e governança | Atual |
 | `as-cnpj-js` | Biblioteca autoral para JavaScript/TypeScript | Publicado |
-| `as-cnpj-python` | Biblioteca autoral para Python | Planejado |
+| `as-cnpj-python` | Biblioteca autoral para Python | Publicado |
 | `as-cnpj-java` | Biblioteca autoral para Java | Planejado |
 | `as-cnpj-dotnet` | Biblioteca autoral para C# /.NET | Planejado |
 | `as-cnpj-go` | Biblioteca autoral para Go | Planejado |
@@ -76,6 +76,9 @@ Esse último ponto importa muito: nenhuma biblioteca da família deve assumir qu
 - [Auditoria de segurança](AUDIT.md)
 - [Política de contribuição](CONTRIBUTING.md)
 - [Referência local da biblioteca JS](packages/js-reference/README.md)
+- [Referência local da biblioteca Python](packages/python-reference/README.md)
+- [Repositório público as-cnpj-js](https://github.com/as-cnpj/as-cnpj-js)
+- [Repositório público as-cnpj-python](https://github.com/as-cnpj/as-cnpj-python)
 
 ## Ordem recomendada
 
@@ -109,6 +112,12 @@ Exemplo com destino customizado:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\prepare-as-cnpj-js.ps1 -Destination ..\as-cnpj-js
+```
+
+Para a semente Python:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\prepare-as-cnpj-python.ps1
 ```
 
 ## Manutenção

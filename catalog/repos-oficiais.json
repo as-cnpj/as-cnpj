@@ -25,7 +25,7 @@
     "repo": "as-cnpj-python",
     "type": "library",
     "language": "Python",
-    "status": "planned",
+    "status": "published-repository",
     "package_names": [
       "as-cnpj"
     ],

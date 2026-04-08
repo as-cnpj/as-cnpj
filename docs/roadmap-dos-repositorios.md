@@ -19,7 +19,8 @@ O primeiro repositório derivado também já existe:
 Agora o foco é:
 
 - consolidar o hub como fonte de verdade do ecossistema;
-- amadurecer `as-cnpj-js` até publicação de pacote;
+- amadurecer `as-cnpj-js` após a publicação inicial de pacote;
+- amadurecer `as-cnpj-python` após a publicação inicial do repositório;
 - replicar o contrato técnico nas próximas linguagens.
 
 ## Sequência Recomendada
@@ -62,11 +63,21 @@ Resultado esperado:
 
 ### 3. `as-cnpj-python`
 
+Estado atual:
+
+- repositório publicado em `https://github.com/as-cnpj/as-cnpj-python`
+
 Escopo:
 
 - port fiel do contrato funcional;
 - API idiomática em Python;
-- testes espelhando os vetores do hub.
+- testes espelhando os vetores do hub;
+- preparar o caminho para futura publicação no PyPI.
+
+Resultado esperado:
+
+- consolidar o repo `as-cnpj-python` com README forte, CI e governança;
+- manter equivalência funcional com `as-cnpj-js` sem copiar implementação.
 
 ### 4. `as-cnpj-java`
 
