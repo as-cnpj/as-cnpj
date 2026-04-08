@@ -58,3 +58,8 @@ No momento, o ecossistema **não usa CLA separado**. O aceite se dá via contrib
 Não use issue pública para vulnerabilidades.
 
 Siga [SECURITY.md](SECURITY.md).
+
+## Mais informações
+
+- [Documentação de contribuição no site](https://as-cnpj.org/pt/docs?page=contributing)
+- [Comunidade e apoiadores](https://as-cnpj.org/pt/community)
