@@ -56,6 +56,6 @@ For public usage, README, issues, and library evolution, use the dedicated repos
 
 ## Publication
 
-- npm package: `@ascnpj/core`
+- npm package: [`@ascnpj/core`](https://www.npmjs.com/package/@ascnpj/core)
 - release workflow located at `.github/workflows/release.yml`
-- publication with `provenance` via GitHub Release
+- Trusted Publishing via GitHub Actions

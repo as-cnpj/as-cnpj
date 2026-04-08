@@ -56,6 +56,6 @@ Para uso público, README, issues e evolução da biblioteca, use o repo dedicad
 
 ## Publicação
 
-- pacote npm: `@ascnpj/core`
+- pacote npm: [`@ascnpj/core`](https://www.npmjs.com/package/@ascnpj/core)
 - workflow de release previsto em `.github/workflows/release.yml`
-- publicação com `provenance` via GitHub Release
+- Trusted Publishing via GitHub Actions
