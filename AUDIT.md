@@ -2,9 +2,25 @@
 
 Idiomas: **Português (Brasil)** | [English](AUDIT.en.md) | [Español](AUDIT.es.md) | [Français](AUDIT.fr.md)
 
-Última atualização: **2026-04-07**
+Última atualização: **2026-04-08**
 
-Este documento descreve as práticas de segurança e os resultados de auditoria do ecossistema AS-CNPJ, com foco na biblioteca JavaScript (`@ascnpj/core`).
+Este documento descreve as práticas de segurança e os resultados de auditoria do ecossistema AS-CNPJ, com foco principal na biblioteca JavaScript publicada em `as-cnpj-js` como [`@ascnpj/core`](https://www.npmjs.com/package/@ascnpj/core).
+
+O hub `as-cnpj` publica esta auditoria como referência institucional do ecossistema, mas o alvo técnico desta análise é o runtime JavaScript, não o próprio hub documental.
+
+## Escopo da auditoria
+
+Escopo principal:
+
+- runtime JavaScript `@ascnpj/core`;
+- pacote npm publicado;
+- processo de publicação e supply chain do runtime.
+
+Fora do escopo principal deste documento:
+
+- repositório hub como site documental;
+- runtimes futuros ainda não publicados;
+- segurança operacional de integrações de terceiros.
 
 ## Superfície de Ataque
 
@@ -57,7 +73,7 @@ A função `String.prototype.toUpperCase()` pode expandir caracteres Unicode (ex
 
 ## Conteúdo do Pacote npm
 
-O campo `files` no `package.json` limita o conteúdo publicado a:
+No runtime `as-cnpj-js`, o campo `files` no `package.json` limita o conteúdo publicado a:
 
 ```
 src/cnpj.js
@@ -122,4 +138,5 @@ Consulte [SECURITY.md](SECURITY.md).
 ## Mais informações
 
 - [Documentação de auditoria no site](https://as-cnpj.org/pt/docs?page=audit)
+- [Repositório do runtime auditado](https://github.com/as-cnpj/as-cnpj-js)
 - [Política de segurança](SECURITY.md)
