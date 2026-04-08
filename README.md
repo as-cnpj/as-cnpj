@@ -88,7 +88,7 @@ Esse último ponto importa muito: nenhuma biblioteca da família deve assumir qu
 ## Testes
 
 ```bash
-node --test --experimental-test-isolation=none packages/js-reference/test/cnpj.test.js
+node packages/js-reference/test/run.js
 ```
 
 Ou:

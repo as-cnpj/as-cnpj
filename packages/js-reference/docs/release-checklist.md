@@ -19,7 +19,7 @@ Nenhum push público deve acontecer sem revisar este checklist.
 - `node --check src/cnpj.js`
 - `node --check src/index.js`
 - `node --check test/cnpj.test.js`
-- `node --test --experimental-test-isolation=none test/cnpj.test.js`
+- `node test/run.js`
 
 ## Publicação
 
@@ -28,6 +28,10 @@ Nenhum push público deve acontecer sem revisar este checklist.
 - Vetores compartilhados presentes.
 - API documentada em `docs/api.md`.
 - Decisões principais documentadas em `docs/decisoes.md`.
+- Trusted Publisher configurado no npm para o repositório `as-cnpj/as-cnpj-js`.
+- Release criada no GitHub com tag no formato `vX.Y.Z`.
+- Tag da release coerente com a versão presente em `package.json`.
+- Workflow [`.github/workflows/release.yml`](../.github/workflows/release.yml) apto a publicar com `npm publish --access public`.
 
 ## Gate final
 
@@ -36,3 +40,4 @@ Só publicar quando:
 - o conteúdo estiver apto para leitura pública;
 - os testes estiverem verdes;
 - o pacote estiver apto para distribuição.
+- a branch `main` estiver protegida com review e status checks obrigatórios.

@@ -45,7 +45,7 @@ Aliases explicites :
 ## Tests
 
 ```bash
-node --test --experimental-test-isolation=none packages/js-reference/test/cnpj.test.js
+node packages/js-reference/test/run.js
 ```
 
 ## Référence publique
@@ -53,3 +53,9 @@ node --test --experimental-test-isolation=none packages/js-reference/test/cnpj.t
 Pour l'usage public, le README, les issues et l'évolution de la bibliothèque, utilisez le dépôt dédié :
 
 - `https://github.com/as-cnpj/as-cnpj-js`
+
+## Publication
+
+- package npm : [`@ascnpj/core`](https://www.npmjs.com/package/@ascnpj/core)
+- workflow de release situé dans `.github/workflows/release.yml`
+- Trusted Publishing via GitHub Actions

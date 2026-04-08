@@ -6,15 +6,29 @@ $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $seedPath = Join-Path $repoRoot "packages\\js-reference"
 $allowedRootFiles = @(
   ".gitignore",
+  "CHANGELOG.en.md",
+  "CHANGELOG.es.md",
+  "CHANGELOG.fr.md",
   "CHANGELOG.md",
+  "CODEOWNERS",
+  "CONTRIBUTING.en.md",
+  "CONTRIBUTING.es.md",
+  "CONTRIBUTING.fr.md",
   "CONTRIBUTING.md",
   "LICENSE",
   "package.json",
+  "README.en.md",
+  "README.es.md",
+  "README.fr.md",
   "README.md",
+  "SECURITY.en.md",
+  "SECURITY.es.md",
+  "SECURITY.fr.md",
   "SECURITY.md"
 )
 
 $allowedDirectories = @(
+  ".github",
   "docs",
   "src",
   "test"
