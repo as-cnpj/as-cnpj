@@ -2,25 +2,22 @@
 
 Idiomas: **Português (Brasil)** | [English](portfolio-de-bibliotecas.en.md) | [Español](portfolio-de-bibliotecas.es.md) | [Français](portfolio-de-bibliotecas.fr.md)
 
-Este repositório **não é um catálogo de bibliotecas de terceiros**.
+Este repositório não é um catálogo de bibliotecas de terceiros. Ele é o hub central do ecossistema **AS-CNPJ**, pensado para apresentar, organizar e governar bibliotecas autorais, uma por linguagem, todas baseadas no mesmo contrato técnico.
 
-Ele é o hub central do ecossistema **AS-CNPJ**, pensado para apresentar, organizar e governar bibliotecas **autorais**, uma por linguagem, todas baseadas na mesma especificação oficial.
-
-## Papel Deste Hub
+## Papel do hub
 
 O hub existe para:
 
-- servir de banner público do tema;
 - centralizar documentação e posicionamento do projeto;
-- publicar regras oficiais, vetores de teste e decisões técnicas;
-- apontar para os repositórios de cada linguagem;
-- manter consistência entre APIs e comportamento.
+- publicar fontes oficiais, vetores de teste e decisões técnicas;
+- apontar para os repositórios públicos de cada linguagem;
+- manter consistência entre contratos, nomenclatura e comportamento.
 
-## Família de Repositórios Planejada
+## Família de repositórios
 
-| Repo | Papel | Status inicial |
+| Repo | Papel | Status |
 | --- | --- | --- |
-| `as-cnpj` | Hub central, documentação, vetores de teste, governança e visão geral | Atual |
+| `as-cnpj` | Hub central, documentação, vetores, auditoria e governança | Atual |
 | `as-cnpj-js` | Biblioteca autoral para JavaScript/TypeScript | Publicado |
 | `as-cnpj-python` | Biblioteca autoral para Python | Publicado |
 | `as-cnpj-java` | Biblioteca autoral para Java | Planejado |
@@ -29,7 +26,7 @@ O hub existe para:
 | `as-cnpj-php` | Biblioteca autoral para PHP | Opcional |
 | `as-cnpj-rust` | Biblioteca autoral para Rust | Opcional |
 
-## Ordem Recomendada de Execução
+## Ordem recomendada
 
 1. `as-cnpj`
 2. `as-cnpj-js`
@@ -45,17 +42,17 @@ Essa ordem faz sentido porque:
 - Java e .NET entram forte em contexto corporativo;
 - Go fecha bem serviços, CLIs e integrações de alta performance.
 
-## Padrão de Naming
+## Padrão de naming
 
-- repo hub: `as-cnpj`
-- repos por linguagem: `as-cnpj-js`, `as-cnpj-python`, `as-cnpj-java`, `as-cnpj-dotnet`
+- hub: `as-cnpj`
+- repos por linguagem: `as-cnpj-{linguagem}`
 - pacotes sugeridos:
   - npm: `@ascnpj/core`
   - PyPI: `as-cnpj`
   - Maven: `br.com.ascnpj:as-cnpj`
   - NuGet: `AsCnpj`
 
-## Contrato Entre Bibliotecas
+## Contrato entre bibliotecas
 
 Toda biblioteca do ecossistema deve:
 
@@ -66,17 +63,17 @@ Toda biblioteca do ecossistema deve:
 - manter comportamento previsível para entrada mascarada e não mascarada;
 - evitar dependências desnecessárias no núcleo do algoritmo.
 
-## Fonte de Verdade do Ecossistema
+## Fonte de verdade do ecossistema
 
 Mesmo após a publicação dos repos derivados:
 
 - o manifesto fica no hub;
 - a especificação fica no hub;
 - os vetores de teste ficam no hub;
-- o template de novos repos fica no hub.
+- a governança e os templates ficam no hub.
 
-Isso evita que cada linguagem comece a "inventar sua própria versão" do projeto.
+Isso evita que cada linguagem comece a divergir silenciosamente do projeto.
 
-## Próximo Movimento
+## Próximo movimento
 
 Com `as-cnpj-js` e `as-cnpj-python` já publicados, o próximo movimento recomendado da org passa a ser `as-cnpj-java`.
