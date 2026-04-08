@@ -6,6 +6,13 @@ Ecossistema autoral de bibliotecas para CNPJ numérico e alfanumérico.
 
 Org GitHub: https://github.com/as-cnpj
 
+## Bibliotecas publicadas
+
+Use estes links como ponto de entrada do ecossistema:
+
+- [as-cnpj-js](https://github.com/as-cnpj/as-cnpj-js) | JavaScript/TypeScript | pacote npm [`@ascnpj/core`](https://www.npmjs.com/package/@ascnpj/core)
+- [as-cnpj-python](https://github.com/as-cnpj/as-cnpj-python) | Python | repositório público ativo
+
 ## Visão
 
 O projeto **AS-CNPJ** existe para resolver um problema real de engenharia: a transição do CNPJ para o formato alfanumérico, anunciada pela Receita Federal para **julho de 2026**, exige implementações corretas, auditáveis e consistentes entre linguagens.
