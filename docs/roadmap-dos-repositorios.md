@@ -12,15 +12,16 @@ A org já existe:
 
 - https://github.com/as-cnpj
 
-O primeiro repositório derivado também já existe:
+Os runtimes públicos já disponíveis são:
 
 - https://github.com/as-cnpj/as-cnpj-js
+- https://github.com/as-cnpj/as-cnpj-python
 
 Agora o foco é:
 
 - consolidar o hub como fonte de verdade do ecossistema;
 - amadurecer `as-cnpj-js` após a publicação inicial de pacote;
-- amadurecer `as-cnpj-python` após a publicação inicial do repositório;
+- amadurecer `as-cnpj-python` antes da publicação inicial no PyPI;
 - replicar o contrato técnico nas próximas linguagens.
 
 ## Sequência Recomendada
@@ -47,13 +48,14 @@ Resultado esperado:
 Estado atual:
 
 - repositório publicado em `https://github.com/as-cnpj/as-cnpj-js`
+- pacote npm já publicado como `@ascnpj/core`
 
 Escopo desta fase:
 
 - estabilizar a API pública inicial;
 - manter testes automatizados;
 - endurecer CI, governança e release process;
-- preparar empacotamento para npm.
+- manter a cadência de releases do pacote.
 
 Resultado esperado:
 
@@ -72,7 +74,7 @@ Escopo:
 - port fiel do contrato funcional;
 - API idiomática em Python;
 - testes espelhando os vetores do hub;
-- preparar o caminho para futura publicação no PyPI.
+- preparar a primeira publicação no PyPI.
 
 Resultado esperado:
 

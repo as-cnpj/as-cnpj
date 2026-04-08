@@ -12,7 +12,7 @@ Standardiser la presentation, le nommage et la gouvernance de l'org `as-cnpj` et
 - **Un depot central de gouvernance**: `as-cnpj`
 - **Un depot par bibliotheque**: `as-cnpj-js`, `as-cnpj-python`, `as-cnpj-java`, `as-cnpj-dotnet`, `as-cnpj-go`
 
-Le hub centralise la documentation, les vecteurs de test et les benchmarks.
+Le hub centralise la documentation, les vecteurs de test, l’audit et la gouvernance.
 Chaque depot par langage centralise uniquement le code de ce langage.
 
 ## Nommage
@@ -28,17 +28,6 @@ Chaque depot par langage centralise uniquement le code de ce langage.
 ## Description courte suggeree pour l'org
 
 Bibliotheques auteur pour la validation du CNPJ numerique et alphanumerique, avec une specification partagee et un accent sur la coherence entre langages.
-
-## Depots a epingler
-
-Lorsqu'ils existent:
-
-1. `as-cnpj`
-2. `as-cnpj-js`
-3. `as-cnpj-python`
-4. `as-cnpj-java`
-5. `as-cnpj-dotnet`
-6. `as-cnpj-go`
 
 ## Description courte suggeree par depot
 
@@ -74,7 +63,7 @@ Topics par depot:
 
 1. bien configurer `as-cnpj`;
 2. faire murir `as-cnpj-js`;
-3. publier le premier package de l'ecosysteme;
+3. faire murir `as-cnpj-python`;
 4. repeter le processus dans les autres langages.
 
 N'ouvrez pas plusieurs depots vides en meme temps.
@@ -101,7 +90,7 @@ Chaque depot derive doit ouvrir avec:
 
 ## Regle de gouvernance
 
-- le hub centralise documentation, vecteurs de test et benchmarks;
+- le hub centralise documentation, vecteurs de test, audit et gouvernance;
 - chaque depot par langage centralise uniquement le code de ce langage;
 - les vecteurs de test doivent etre partages et versionnes de facon independante;
 - chaque implementation doit prouver sa compatibilite avec les vecteurs du hub;
