@@ -12,7 +12,7 @@ Padronizar a apresentação, naming e governança da org `as-cnpj` e dos reposit
 - **Um repo central para governança**: `as-cnpj`
 - **Um repo por biblioteca**: `as-cnpj-js`, `as-cnpj-python`, `as-cnpj-java`, `as-cnpj-dotnet`, `as-cnpj-go`
 
-O hub centraliza documentação, vetores de teste e benchmarks.
+O hub centraliza documentação, vetores de teste, auditoria e governança.
 Cada repo por linguagem centraliza apenas código daquela linguagem.
 
 ## Naming
@@ -28,17 +28,6 @@ Cada repo por linguagem centraliza apenas código daquela linguagem.
 ## Descrição Curta Sugerida para a Org
 
 Bibliotecas autorais para validação de CNPJ numérico e alfanumérico, com especificação compartilhada e foco em consistência entre linguagens.
-
-## Repositórios para Pin
-
-Quando existirem:
-
-1. `as-cnpj`
-2. `as-cnpj-js`
-3. `as-cnpj-python`
-4. `as-cnpj-java`
-5. `as-cnpj-dotnet`
-6. `as-cnpj-go`
 
 ## Descrição Curta Sugerida por Repo
 
@@ -74,7 +63,7 @@ Topics por repo:
 
 1. configurar bem `as-cnpj`;
 2. amadurecer `as-cnpj-js`;
-3. publicar o primeiro pacote do ecossistema;
+3. amadurecer `as-cnpj-python`;
 4. repetir o processo nas demais linguagens.
 
 Não abrir vários repos vazios ao mesmo tempo.
@@ -101,7 +90,7 @@ Todo repo derivado deve abrir com:
 
 ## Regra de Governança
 
-- o hub centraliza documentação, vetores de teste e benchmarks;
+- o hub centraliza documentação, vetores de teste, auditoria e governança;
 - cada repo por linguagem centraliza apenas código daquela linguagem;
 - os vetores de teste devem ser compartilhados e versionados de forma independente;
 - toda implementação deve provar compatibilidade com os vetores do hub;

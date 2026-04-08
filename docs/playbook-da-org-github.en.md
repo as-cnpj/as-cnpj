@@ -12,7 +12,7 @@ Standardize presentation, naming, and governance for the `as-cnpj` org and the r
 - **One central governance repo**: `as-cnpj`
 - **One repo per library**: `as-cnpj-js`, `as-cnpj-python`, `as-cnpj-java`, `as-cnpj-dotnet`, `as-cnpj-go`
 
-The hub centralizes documentation, test vectors, and benchmarks.
+The hub centralizes documentation, test vectors, audit, and governance.
 Each language repository centralizes only the code for that language.
 
 ## Naming
@@ -28,17 +28,6 @@ Each language repository centralizes only the code for that language.
 ## Suggested short org description
 
 Author libraries for numeric and alphanumeric CNPJ validation, with a shared specification and focus on cross-language consistency.
-
-## Repositories to pin
-
-When available:
-
-1. `as-cnpj`
-2. `as-cnpj-js`
-3. `as-cnpj-python`
-4. `as-cnpj-java`
-5. `as-cnpj-dotnet`
-6. `as-cnpj-go`
 
 ## Suggested short description by repository
 
@@ -74,7 +63,7 @@ Topics by repository:
 
 1. configure `as-cnpj` well;
 2. mature `as-cnpj-js`;
-3. publish the first package in the ecosystem;
+3. mature `as-cnpj-python`;
 4. repeat the process for the remaining languages.
 
 Do not open several empty repositories at the same time.
@@ -101,7 +90,7 @@ Each derived repository should open with:
 
 ## Governance rule
 
-- the hub centralizes documentation, test vectors, and benchmarks;
+- the hub centralizes documentation, test vectors, audit, and governance;
 - each language repository centralizes only code for that language;
 - test vectors should be shared and versioned independently;
 - every implementation must prove compatibility with the hub vectors;

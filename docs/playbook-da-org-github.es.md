@@ -12,7 +12,7 @@ Estandarizar la presentacion, el naming y la gobernanza de la org `as-cnpj` y de
 - **Un repositorio central de gobernanza**: `as-cnpj`
 - **Un repositorio por biblioteca**: `as-cnpj-js`, `as-cnpj-python`, `as-cnpj-java`, `as-cnpj-dotnet`, `as-cnpj-go`
 
-El hub centraliza documentacion, vectores de prueba y benchmarks.
+El hub centraliza documentacion, vectores de prueba, auditoria y gobernanza.
 Cada repositorio por lenguaje centraliza solo el codigo de ese lenguaje.
 
 ## Naming
@@ -28,17 +28,6 @@ Cada repositorio por lenguaje centraliza solo el codigo de ese lenguaje.
 ## Descripcion corta sugerida para la org
 
 Bibliotecas autorales para validacion de CNPJ numerico y alfanumerico, con especificacion compartida y foco en consistencia entre lenguajes.
-
-## Repositorios para fijar
-
-Cuando existan:
-
-1. `as-cnpj`
-2. `as-cnpj-js`
-3. `as-cnpj-python`
-4. `as-cnpj-java`
-5. `as-cnpj-dotnet`
-6. `as-cnpj-go`
 
 ## Descripcion corta sugerida por repositorio
 
@@ -74,7 +63,7 @@ Topics por repositorio:
 
 1. configurar bien `as-cnpj`;
 2. madurar `as-cnpj-js`;
-3. publicar el primer paquete del ecosistema;
+3. madurar `as-cnpj-python`;
 4. repetir el proceso en los demas lenguajes.
 
 No abras varios repositorios vacios al mismo tiempo.
@@ -101,7 +90,7 @@ Todo repositorio derivado debe comenzar con:
 
 ## Regla de gobernanza
 
-- el hub centraliza documentacion, vectores de prueba y benchmarks;
+- el hub centraliza documentacion, vectores de prueba, auditoria y gobernanza;
 - cada repositorio por lenguaje centraliza solo el codigo de ese lenguaje;
 - los vectores de prueba deben compartirse y versionarse de forma independiente;
 - toda implementacion debe probar compatibilidad con los vectores del hub;

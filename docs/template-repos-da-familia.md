@@ -38,30 +38,18 @@ Todo README de repo derivado deve responder rapidamente:
 
 ## Modelo Padrão de README
 
-O modelo editorial recomendado para novos repos da família agora é o **modelo executivo** adotado em `as-cnpj-js`.
+O padrão editorial recomendado para novos repos da família é o modelo já adotado nos repositórios públicos da org.
 
-Template reutilizável:
-
-- [Template de README executivo](template-readme-executivo-da-familia.md)
-
-Esse template deve ser tratado como base preferencial para:
-
-- `as-cnpj-python`
-- `as-cnpj-java`
-- `as-cnpj-dotnet`
-- `as-cnpj-go`
-
-Adaptações por linguagem são esperadas, mas a estrutura principal deve permanecer reconhecível:
+A estrutura principal deve permanecer reconhecível:
 
 - status;
-- comece por aqui;
-- problema que a biblioteca resolve;
+- instalação;
+- exemplo rápido;
+- casos de uso;
 - garantias centrais;
 - API pública;
-- exemplo mínimo;
-- testes;
+- documentação e referências;
 - vetores compartilhados;
-- ecossistema;
 - manutenção.
 
 ## API Mínima Esperada
@@ -110,7 +98,6 @@ Quando o repo amadurecer:
 
 - `.github/workflows/ci.yml`
 - `examples/`
-- `benchmarks/`
 
 ## Política de Versão
 

@@ -2,34 +2,31 @@
 
 Languages: [Português (Brasil)](portfolio-de-bibliotecas.md) | **English** | [Español](portfolio-de-bibliotecas.es.md) | [Français](portfolio-de-bibliotecas.fr.md)
 
-This repository **is not a catalog of third-party libraries**.
+This repository is not a catalog of third-party libraries. It is the central hub of the **AS-CNPJ** ecosystem, designed to present, organize, and govern author-led libraries, one per language, all based on the same technical contract.
 
-It is the central hub of the **AS-CNPJ** ecosystem, designed to present, organize, and govern **author libraries**, one per language, all based on the same official specification.
-
-## Role of this hub
+## Hub role
 
 The hub exists to:
 
-- serve as the public banner for the topic;
 - centralize project documentation and positioning;
-- publish official rules, test vectors, and technical decisions;
-- point to the repositories for each language;
-- maintain consistency between APIs and behavior.
+- publish official sources, test vectors, and technical decisions;
+- point to the public repositories of each language;
+- keep contracts, naming, and behavior consistent.
 
-## Planned repository family
+## Repository family
 
-| Repo | Role | Initial status |
+| Repo | Role | Status |
 | --- | --- | --- |
-| `as-cnpj` | Central hub, documentation, test vectors, governance, and overview | Current |
+| `as-cnpj` | Central hub, documentation, vectors, audit, and governance | Current |
 | `as-cnpj-js` | Author library for JavaScript/TypeScript | Published |
-| `as-cnpj-python` | Author library for Python | Local seed in the hub |
+| `as-cnpj-python` | Author library for Python | Published |
 | `as-cnpj-java` | Author library for Java | Planned |
 | `as-cnpj-dotnet` | Author library for C# /.NET | Planned |
 | `as-cnpj-go` | Author library for Go | Planned |
 | `as-cnpj-php` | Author library for PHP | Optional |
 | `as-cnpj-rust` | Author library for Rust | Optional |
 
-## Recommended execution order
+## Recommended order
 
 1. `as-cnpj`
 2. `as-cnpj-js`
@@ -38,17 +35,10 @@ The hub exists to:
 5. `as-cnpj-dotnet`
 6. `as-cnpj-go`
 
-This order makes sense because:
-
-- JS/TS serves browsers, Node, and quick integrations;
-- Python covers automation, backends, and data stacks;
-- Java and .NET are strong in corporate environments;
-- Go fits services, CLIs, and high-performance integrations.
-
 ## Naming pattern
 
-- hub repo: `as-cnpj`
-- language repos: `as-cnpj-js`, `as-cnpj-python`, `as-cnpj-java`, `as-cnpj-dotnet`
+- hub: `as-cnpj`
+- language repos: `as-cnpj-{language}`
 - suggested packages:
   - npm: `@ascnpj/core`
   - PyPI: `as-cnpj`
@@ -57,30 +47,24 @@ This order makes sense because:
 
 ## Contract between libraries
 
-Every library in the ecosystem must:
+Every ecosystem library must:
 
 - validate numeric and alphanumeric CNPJ;
 - share the same normalization semantics;
-- share the same set of test vectors;
-- clearly document permissive mode and strict mode;
+- share the same test vectors;
+- document permissive and strict modes clearly;
 - keep predictable behavior for masked and unmasked input;
-- avoid unnecessary dependencies in the core algorithm.
+- avoid unnecessary dependencies in the algorithm core.
 
-## Source of truth for the ecosystem
+## Source of truth
 
-Even after publishing derived repositories:
+Even after public runtimes exist:
 
 - the manifesto stays in the hub;
 - the specification stays in the hub;
-- test vectors stay in the hub;
-- the template for new repositories stays in the hub.
-
-This prevents each language from starting to invent its own version of the project.
+- the test vectors stay in the hub;
+- governance and templates stay in the hub.
 
 ## Next move
 
-The next recommended repo in the org is now `as-cnpj-python`.
-
-The local seed already exists in:
-
-- `packages/python-reference`
+With `as-cnpj-js` and `as-cnpj-python` already published, the next recommended move for the org is `as-cnpj-java`.
