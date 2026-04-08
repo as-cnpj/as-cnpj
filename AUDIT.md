@@ -117,3 +117,9 @@ Consulte [SECURITY.md](SECURITY.md).
 | Data | Evento |
 | --- | --- |
 | 2026-04-07 | Auditoria inicial: análise de código, regex, supply chain, pacote npm |
+| 2026-04-08 | Auditoria do site: links externos, CSP headers, query params, localStorage, dark mode |
+
+## Mais informações
+
+- [Documentação de auditoria no site](https://as-cnpj.org/pt/docs?page=audit)
+- [Política de segurança](SECURITY.md)

@@ -4,7 +4,7 @@ Idiomas: **Português (Brasil)** | [English](README.en.md) | [Español](README.e
 
 Ecossistema autoral de bibliotecas para CNPJ numérico e alfanumérico.
 
-Org GitHub: https://github.com/as-cnpj
+Site: https://as-cnpj.org · Org GitHub: https://github.com/as-cnpj
 
 ## Bibliotecas publicadas
 
@@ -132,8 +132,11 @@ powershell -ExecutionPolicy Bypass -File .\scripts\prepare-as-cnpj-python.ps1
 Maintainer: **@0moura**
 Contato institucional: **ascnpj@0moura.io**
 
-Para reportar vulnerabilidades, consulte [SECURITY.md](SECURITY.md).
-Para contribuições, consulte [CONTRIBUTING.md](CONTRIBUTING.md).
+- [Site e documentação](https://as-cnpj.org)
+- [Comunidade e apoiadores](https://as-cnpj.org/pt/community)
+- [Política de segurança](SECURITY.md)
+- [Auditoria de segurança](AUDIT.md)
+- [Como contribuir](CONTRIBUTING.md)
 
 ## Direção Atual
 

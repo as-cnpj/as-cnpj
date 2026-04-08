@@ -54,4 +54,9 @@ Seguimos o modelo de **divulgação coordenada**:
 
 - bugs funcionais que não comprometam segurança (use issues normais);
 - sugestões de feature;
-- problemas em dependencias externas ao ecossistema.
+- problemas em dependências externas ao ecossistema.
+
+## Mais informações
+
+- [Auditoria de segurança completa](AUDIT.md)
+- [Documentação de segurança no site](https://as-cnpj.org/pt/docs?page=security-policy)
