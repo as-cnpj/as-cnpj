@@ -21,7 +21,7 @@ Now the focus is:
 
 - keep the hub as the source of truth for the ecosystem;
 - mature `as-cnpj-js` after the initial npm publication;
-- mature `as-cnpj-python` before the initial PyPI publication;
+- mature `as-cnpj-python` after the initial PyPI publication;
 - replicate the same technical contract in future languages.
 
 ## Recommended sequence
@@ -50,7 +50,7 @@ Current state:
 Current state:
 
 - public repository;
-- next natural step is PyPI publication.
+- PyPI package already published as `as-cnpj`.
 
 ### 4. `as-cnpj-java`
 
@@ -72,6 +72,16 @@ Scope:
 Scope:
 
 - focus on simplicity, low overhead, and package ergonomics.
+
+## Cross-cutting recommended capabilities
+
+Beyond opening new runtimes, the ecosystem should also evolve with:
+
+- batch validation;
+- batch normalization and formatting;
+- public tools on the site;
+- migration and storage guides;
+- explicit support for homologation and data cleanup.
 
 ## Rule
 

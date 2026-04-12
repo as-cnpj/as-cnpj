@@ -26,7 +26,7 @@ Idiomas: **Português (Brasil)** | [English](README.en.md) | [Español](README.e
 ## Bibliotecas publicadas
 
 - [as-cnpj-js](https://github.com/as-cnpj/as-cnpj-js) | JavaScript/TypeScript | pacote npm [`@ascnpj/core`](https://www.npmjs.com/package/@ascnpj/core)
-- [as-cnpj-python](https://github.com/as-cnpj/as-cnpj-python) | Python | repositório público ativo
+- [as-cnpj-python](https://github.com/as-cnpj/as-cnpj-python) | Python | pacote PyPI [`as-cnpj`](https://pypi.org/project/as-cnpj/)
 
 ## O que este hub centraliza
 
@@ -41,6 +41,8 @@ Idiomas: **Português (Brasil)** | [English](README.en.md) | [Español](README.e
 - [Manifesto e princípios](docs/manifesto-as-cnpj.md)
 - [Fontes oficiais e regras de negócio](docs/fontes-oficiais-e-regras.md)
 - [Arquitetura e migração para CNPJ alfanumérico](docs/arquitetura-e-migracao.md)
+- [Guia prático de armazenamento e migração](docs/guia-pratico-de-armazenamento-e-migracao.md)
+- [Roadmap de ferramentas e capacidades](docs/roadmap-de-ferramentas-e-capacidades.md)
 - [Vetores compartilhados](vectors/cnpj.json)
 - [Schema dos vetores](vectors/cnpj.schema.json)
 - [Portfólio do ecossistema](docs/portfolio-de-bibliotecas.md)
@@ -62,10 +64,17 @@ Idiomas: **Português (Brasil)** | [English](README.en.md) | [Español](README.e
 | --- | --- | --- |
 | `as-cnpj` | Hub central, manifesto, vetores, auditoria e governança | Atual |
 | `as-cnpj-js` | Biblioteca autoral para JavaScript/TypeScript | Publicado |
-| `as-cnpj-python` | Biblioteca autoral para Python | Publicado |
+| `as-cnpj-python` | Biblioteca autoral para Python | Publicado no PyPI |
 | `as-cnpj-java` | Biblioteca autoral para Java | Planejado |
 | `as-cnpj-dotnet` | Biblioteca autoral para C# /.NET | Planejado |
 | `as-cnpj-go` | Biblioteca autoral para Go | Planejado |
+
+## Próximo foco recomendado
+
+- documentação prática de armazenamento e migração;
+- ferramentas públicas no site;
+- validação em lote nas bibliotecas;
+- `as-cnpj-java` como próximo runtime.
 
 ## Manutenção
 

@@ -21,7 +21,7 @@ Agora o foco é:
 
 - consolidar o hub como fonte de verdade do ecossistema;
 - amadurecer `as-cnpj-js` após a publicação inicial de pacote;
-- amadurecer `as-cnpj-python` antes da publicação inicial no PyPI;
+- amadurecer `as-cnpj-python` após a publicação inicial no PyPI;
 - replicar o contrato técnico nas próximas linguagens.
 
 ## Sequência Recomendada
@@ -68,17 +68,18 @@ Resultado esperado:
 Estado atual:
 
 - repositório publicado em `https://github.com/as-cnpj/as-cnpj-python`
+- pacote PyPI já publicado como `as-cnpj`
 
 Escopo:
 
 - port fiel do contrato funcional;
 - API idiomática em Python;
 - testes espelhando os vetores do hub;
-- preparar a primeira publicação no PyPI.
+- manter a cadência de releases do pacote no PyPI.
 
 Resultado esperado:
 
-- consolidar o repo `as-cnpj-python` com README forte, CI e governança;
+- consolidar o repo `as-cnpj-python` com README forte, CI, governança e fluxo estável de release;
 - manter equivalência funcional com `as-cnpj-js` sem copiar implementação.
 
 ### 4. `as-cnpj-java`
@@ -122,6 +123,16 @@ Publicar pacote somente quando houver:
 - licença definida;
 - API mínima estabilizada;
 - exemplos de uso.
+
+## Capacidades transversais recomendadas
+
+Além da abertura de novos runtimes, o ecossistema deve evoluir com:
+
+- validação em lote;
+- normalização e formatação em lote;
+- ferramentas públicas no site;
+- guias de migração e armazenamento;
+- suporte explícito a homologação e saneamento de base.
 
 ## Regra Operacional
 

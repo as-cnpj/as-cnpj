@@ -4,11 +4,11 @@ Langues : [Português (Brasil)](roadmap-dos-repositorios.md) | [English](roadmap
 
 ## Objectif
 
-Définir l’ordre de maturation et le périmètre de chaque dépôt de l’organisation `as-cnpj`.
+Définir l'ordre de maturation et le périmètre de chaque dépôt de l'organisation `as-cnpj`.
 
 ## Phase actuelle
 
-L’organisation existe déjà :
+L'organisation existe déjà :
 
 - https://github.com/as-cnpj
 
@@ -19,9 +19,9 @@ Les runtimes publics déjà disponibles sont :
 
 Le focus est maintenant de :
 
-- garder le hub comme source de vérité de l’écosystème ;
+- garder le hub comme source de vérité de l'écosystème ;
 - faire mûrir `as-cnpj-js` après la publication initiale sur npm ;
-- faire mûrir `as-cnpj-python` avant la publication initiale sur PyPI ;
+- faire mûrir `as-cnpj-python` après la publication initiale sur PyPI ;
 - répliquer le même contrat technique dans les futurs langages.
 
 ## Séquence recommandée
@@ -50,7 +50,7 @@ Périmètre :
 État actuel :
 
 - dépôt public ;
-- la prochaine étape naturelle est la publication sur PyPI.
+- paquet PyPI déjà publié sous le nom `as-cnpj`.
 
 ### 4. `as-cnpj-java`
 
@@ -58,20 +58,30 @@ Périmètre :
 
 - focus backend corporate ;
 - API claire pour les intégrations ;
-- bonne couverture de l’algorithme et du formatage.
+- bonne couverture de l'algorithme et du formatage.
 
 ### 5. `as-cnpj-dotnet`
 
 Périmètre :
 
 - focus sur .NET moderne ;
-- bonne sémantique d’API pour services et applications d’entreprise.
+- bonne sémantique d'API pour services et applications d'entreprise.
 
 ### 6. `as-cnpj-go`
 
 Périmètre :
 
-- focus sur la simplicité, le faible overhead et l’ergonomie du package.
+- focus sur la simplicité, le faible overhead et l'ergonomie du package.
+
+## Capacités transversales recommandées
+
+Au-delà de l'ouverture de nouveaux runtimes, l'écosystème devrait aussi évoluer avec :
+
+- validation par lot ;
+- normalisation et formatage par lot ;
+- outils publics sur le site ;
+- guides de migration et de stockage ;
+- support explicite pour l'homologation et l'assainissement de base.
 
 ## Règle
 
