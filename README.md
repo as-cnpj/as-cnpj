@@ -16,6 +16,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@ascnpj/core"><img alt="npm @ascnpj/core" src="https://img.shields.io/npm/v/%40ascnpj%2Fcore?style=flat-square&label=npm&labelColor=1C1917&color=F97316"></a>
+  <a href="https://pypi.org/project/as-cnpj/"><img alt="PyPI as-cnpj" src="https://img.shields.io/pypi/v/as-cnpj?style=flat-square&label=pypi&labelColor=1C1917&color=F97316"></a>
   <a href="https://github.com/as-cnpj/as-cnpj-js/actions/workflows/ci.yml"><img alt="CI as-cnpj-js" src="https://img.shields.io/github/actions/workflow/status/as-cnpj/as-cnpj-js/ci.yml?branch=main&style=flat-square&label=as-cnpj-js&labelColor=1C1917"></a>
   <a href="https://github.com/as-cnpj/as-cnpj-python/actions/workflows/ci.yml"><img alt="CI as-cnpj-python" src="https://img.shields.io/github/actions/workflow/status/as-cnpj/as-cnpj-python/ci.yml?branch=main&style=flat-square&label=as-cnpj-python&labelColor=1C1917"></a>
   <a href="LICENSE"><img alt="License MIT" src="https://img.shields.io/github/license/as-cnpj/as-cnpj?style=flat-square&label=license&labelColor=1C1917&color=84A870"></a>
@@ -26,7 +27,7 @@ Idiomas: **Português (Brasil)** | [English](README.en.md) | [Español](README.e
 ## Bibliotecas publicadas
 
 - [as-cnpj-js](https://github.com/as-cnpj/as-cnpj-js) | JavaScript/TypeScript | pacote npm [`@ascnpj/core`](https://www.npmjs.com/package/@ascnpj/core)
-- [as-cnpj-python](https://github.com/as-cnpj/as-cnpj-python) | Python | repositório público ativo
+- [as-cnpj-python](https://github.com/as-cnpj/as-cnpj-python) | Python | pacote PyPI [`as-cnpj`](https://pypi.org/project/as-cnpj/)
 
 ## O que este hub centraliza
 
