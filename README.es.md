@@ -10,7 +10,7 @@ Org GitHub: https://github.com/as-cnpj
 ## Bibliotecas publicadas
 
 - [as-cnpj-js](https://github.com/as-cnpj/as-cnpj-js) | JavaScript/TypeScript | paquete npm [`@ascnpj/core`](https://www.npmjs.com/package/@ascnpj/core)
-- [as-cnpj-python](https://github.com/as-cnpj/as-cnpj-python) | Python | repositorio público activo
+- [as-cnpj-python](https://github.com/as-cnpj/as-cnpj-python) | Python | paquete PyPI [`as-cnpj`](https://pypi.org/project/as-cnpj/)
 
 ## Qué centraliza este hub
 
@@ -25,6 +25,8 @@ Org GitHub: https://github.com/as-cnpj
 - [Manifiesto y principios](docs/manifesto-as-cnpj.md)
 - [Fuentes oficiales y reglas de negocio](docs/fontes-oficiais-e-regras.md)
 - [Arquitectura y migración para CNPJ alfanumérico](docs/arquitetura-e-migracao.md)
+- [Guía práctica de almacenamiento y migración](docs/guia-pratico-de-armazenamento-e-migracao.es.md)
+- [Hoja de ruta de herramientas y capacidades](docs/roadmap-de-ferramentas-e-capacidades.es.md)
 - [Vectores compartidos](vectors/cnpj.json)
 - [Schema de vectores](vectors/cnpj.schema.json)
 - [Portafolio del ecosistema](docs/portfolio-de-bibliotecas.md)
@@ -46,10 +48,17 @@ Org GitHub: https://github.com/as-cnpj
 | --- | --- | --- |
 | `as-cnpj` | Hub central, manifiesto, vectores, auditoría y gobernanza | Actual |
 | `as-cnpj-js` | Biblioteca autoral para JavaScript/TypeScript | Publicado |
-| `as-cnpj-python` | Biblioteca autoral para Python | Publicado |
+| `as-cnpj-python` | Biblioteca autoral para Python | Publicado en PyPI |
 | `as-cnpj-java` | Biblioteca autoral para Java | Planeado |
 | `as-cnpj-dotnet` | Biblioteca autoral para C# /.NET | Planeado |
 | `as-cnpj-go` | Biblioteca autoral para Go | Planeado |
+
+## Próximo foco recomendado
+
+- guía práctica de almacenamiento y migración;
+- herramientas públicas en el sitio;
+- validación por lotes en las bibliotecas;
+- `as-cnpj-java` como siguiente runtime.
 
 ## Mantenimiento
 

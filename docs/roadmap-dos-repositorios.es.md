@@ -21,7 +21,7 @@ Ahora el foco es:
 
 - mantener el hub como fuente de verdad del ecosistema;
 - madurar `as-cnpj-js` después de la publicación inicial en npm;
-- madurar `as-cnpj-python` antes de la publicación inicial en PyPI;
+- madurar `as-cnpj-python` después de la publicación inicial en PyPI;
 - replicar el mismo contrato técnico en los próximos lenguajes.
 
 ## Secuencia recomendada
@@ -50,7 +50,7 @@ Estado actual:
 Estado actual:
 
 - repositorio público;
-- el siguiente paso natural es la publicación en PyPI.
+- paquete PyPI ya publicado como `as-cnpj`.
 
 ### 4. `as-cnpj-java`
 
@@ -72,6 +72,16 @@ Alcance:
 Alcance:
 
 - foco en simplicidad, bajo overhead y ergonomía de paquete.
+
+## Capacidades transversales recomendadas
+
+Además de abrir nuevos runtimes, el ecosistema debe evolucionar con:
+
+- validación por lotes;
+- normalización y formateo por lotes;
+- herramientas públicas en el sitio;
+- guías de migración y almacenamiento;
+- soporte explícito para homologación y saneamiento de base.
 
 ## Regla
 
