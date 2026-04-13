@@ -18,8 +18,8 @@ O hub existe para:
 | Repo | Papel | Status |
 | --- | --- | --- |
 | `as-cnpj` | Hub central, documentação, vetores, auditoria e governança | Atual |
-| `as-cnpj-js` | Biblioteca autoral para JavaScript/TypeScript | Publicado |
-| `as-cnpj-python` | Biblioteca autoral para Python | Publicado |
+| `as-cnpj-js` | Biblioteca autoral para JavaScript/TypeScript, com API unitária e validação em lote | Publicado |
+| `as-cnpj-python` | Biblioteca autoral para Python, com API unitária e validação em lote | Publicado |
 | `as-cnpj-java` | Biblioteca autoral para Java | Planejado |
 | `as-cnpj-dotnet` | Biblioteca autoral para C# /.NET | Planejado |
 | `as-cnpj-go` | Biblioteca autoral para Go | Planejado |
@@ -62,6 +62,11 @@ Toda biblioteca do ecossistema deve:
 - documentar claramente modo permissivo e modo estrito;
 - manter comportamento previsível para entrada mascarada e não mascarada;
 - evitar dependências desnecessárias no núcleo do algoritmo.
+
+As bibliotecas já publicadas também passaram a expor capacidade de validação em lote:
+
+- `as-cnpj-js`: `validateMany` e `validateManyCNPJ`
+- `as-cnpj-python`: `validate_many` e `validate_many_cnpj`
 
 ## Fonte de verdade do ecossistema
 

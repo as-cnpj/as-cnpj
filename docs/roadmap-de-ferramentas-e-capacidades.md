@@ -10,9 +10,8 @@ Validação de um item por vez resolve o núcleo, mas não resolve toda a experi
 
 As próximas capacidades com melhor custo-benefício são:
 
-- validação em lote;
-- normalização e formatação em lote;
 - ferramentas públicas no site;
+- normalização e formatação em lote;
 - utilitários de migração e homologação.
 
 ## O que vale construir no site
@@ -33,28 +32,7 @@ Valor:
 - reduz dúvida de integração;
 - funciona como prova pública do comportamento do ecossistema.
 
-### 2. Validador em lote
-
-Ferramenta para colar múltiplas linhas:
-
-- uma entrada por linha;
-- resultado por linha;
-- resumo agregado;
-- exportação opcional em CSV.
-
-Valor:
-
-- útil para saneamento de base;
-- útil para homologação;
-- útil para atendimento e suporte.
-
-Recomendação:
-
-- processamento local no navegador quando possível;
-- sem upload obrigatório;
-- sem persistência por padrão.
-
-### 3. Gerador de exemplos válidos para teste
+### 2. Gerador de exemplos válidos para teste
 
 Aqui a recomendação é de naming:
 
@@ -73,7 +51,7 @@ Regras sugeridas:
 - rotular claramente como teste;
 - opcionalmente cruzar comportamento com o simulador oficial da Receita.
 
-### 4. Formatador / normalizador
+### 3. Formatador / normalizador
 
 Ferramenta simples, mas útil:
 
@@ -82,7 +60,7 @@ Ferramenta simples, mas útil:
 - saída formatada;
 - indicação se a entrada é inválida.
 
-### 5. Playground de API
+### 4. Playground de API
 
 Página mostrando:
 
@@ -107,7 +85,11 @@ Toda biblioteca deve manter:
 
 #### 1. Validação em lote
 
-Recomendação forte para todas as linguagens principais.
+Status atual:
+
+- entregue em `as-cnpj-js`
+- entregue em `as-cnpj-python`
+- recomendada como padrão para as próximas linguagens principais
 
 Possíveis nomes:
 
@@ -181,16 +163,16 @@ Para bibliotecas de backend:
 ### Alta prioridade
 
 - validador simples no site;
-- validador em lote no site;
-- validação em lote no JS;
-- validação em lote no Python.
+- gerador de exemplos válidos para teste;
+- formatador/normalizador público;
+- consolidar batch como padrão nas próximas bibliotecas.
 
 ### Média prioridade
 
-- gerador de exemplos válidos para teste;
-- formatador/normalizador público;
 - códigos de erro estáveis;
-- exportação CSV no site.
+- normalização e formatação em lote;
+- exportação CSV no site;
+- playground de API.
 
 ### Baixa prioridade
 
@@ -203,9 +185,9 @@ Para bibliotecas de backend:
 Se a ideia é investir onde a comunidade percebe valor mais rápido:
 
 1. validador simples no site;
-2. validador em lote no site;
-3. `validateMany` ou equivalente nas bibliotecas;
-4. gerador de exemplos válidos para teste.
+2. gerador de exemplos válidos para teste;
+3. formatador/normalizador público;
+4. batch consistente nas bibliotecas.
 
 ## Regra de desenho
 
