@@ -26,8 +26,8 @@ Idiomas: **Português (Brasil)** | [English](README.en.md) | [Español](README.e
 
 ## Bibliotecas publicadas
 
-- [as-cnpj-js](https://github.com/as-cnpj/as-cnpj-js) | JavaScript/TypeScript | pacote npm [`@ascnpj/core`](https://www.npmjs.com/package/@ascnpj/core)
-- [as-cnpj-python](https://github.com/as-cnpj/as-cnpj-python) | Python | pacote PyPI [`as-cnpj`](https://pypi.org/project/as-cnpj/)
+- [as-cnpj-js](https://github.com/as-cnpj/as-cnpj-js) | JavaScript/TypeScript | pacote npm [`@ascnpj/core`](https://www.npmjs.com/package/@ascnpj/core) | validação unitária e validação em lote com `validateMany`
+- [as-cnpj-python](https://github.com/as-cnpj/as-cnpj-python) | Python | pacote PyPI [`as-cnpj`](https://pypi.org/project/as-cnpj/) | validação unitária e validação em lote com `validate_many`
 
 ## O que este hub centraliza
 
@@ -74,7 +74,7 @@ Idiomas: **Português (Brasil)** | [English](README.en.md) | [Español](README.e
 
 - documentação prática de armazenamento e migração;
 - ferramentas públicas no site;
-- validação em lote nas bibliotecas;
+- normalização e formatação em lote onde fizer sentido;
 - `as-cnpj-java` como próximo runtime.
 
 ## Manutenção
